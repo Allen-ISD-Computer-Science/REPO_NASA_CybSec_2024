@@ -3,6 +3,7 @@
 ---
 ## Roles:
 **Project Manager: Abel Semahegn @abelSemahegn** 
+**Front End Developer: Vansh Bhatt @theogflamez**
 ---
 # One time Pad encryption implementaion
 This is the method of reading and encrypting the text
