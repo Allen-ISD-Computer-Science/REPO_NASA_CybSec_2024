@@ -3,8 +3,9 @@
 ---
 ## Roles:
 **Project Manager: Abel Semahegn @abelSemahegn** 
-
+https://codermerlin.academy/users/abel-semahegn/Digital%20Portfolio/
 **Front End Developer: Vansh Bhatt @theogflamez**
+https://codermerlin.academy/users/vansh-Bhat/Digital%20Portfolio/
 ---
 # One time Pad encryption implementaion
 This is the method of reading and encrypting the text
