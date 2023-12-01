@@ -20,6 +20,9 @@ https://codermerlin.academy/users/srujan-sannidhi/Digital%20Portfolio/index.html
 **DBA: Andrew Lin (@Fangedan / @McAndrewJr)**
 https://codermerlin.academy/users/andrewm-lin/Digital%20Portfolio/index.html
 
+**Back End Developer: Aditya Sudharshan @ditya-beta**
+https://codermerlin.academy/users/aditya-sudharshan/Digital%20Portfolio/CS-I/index.html
+
 ---
 # One time Pad encryption implementaion
 This is the method of reading and encrypting the text
