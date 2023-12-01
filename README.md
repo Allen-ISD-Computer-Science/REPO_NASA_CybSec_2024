@@ -7,7 +7,7 @@ https://codermerlin.academy/users/abel-semahegn/Digital%20Portfolio/
 /
 **Front End Developer: Vansh Bhatt @theogflamez**
 https://codermerlin.academy/users/vansh-bhatt/Digital%20Portfolio/
-
+/
 **QA: Richard Jang @Richard-Jang**
 https://www.codermerlin.academy/users/ming-ruei-jang/Digital%20Portfolio/index.html
 
