@@ -2,7 +2,7 @@
 ### Design a Reliable, Redundant, and Secure Network to transport the data, video, telemetry, and voice from the moon's Smart Building to a Control Center(s) on Earth.
 ---
 ## Roles:
-**Project Manager: Abel Semahegn @abelSemahegn** 
+**Product Manager: Abel Semahegn @abelSemahegn** 
 https://codermerlin.academy/users/abel-semahegn/Digital%20Portfolio/index.html
 
 **Front End Developer: Vansh Bhatt @theogflamez**
