@@ -23,7 +23,7 @@
 **Back End Developer: Aditya Sudharshan @ditya-beta [Digital Portfolio](https://codermerlin.academy/users/aditya-sudharshan/Digital%20Portfolio/CS-I/index.html)**
 
 
-**Project Manager: Jacob Fesseha @Nigusi-Artabanus [Digital Portfolio](https://codermerlin.academy/users/jacob-fesseha/Digital%20Portfolio/index.html)**
+**Project Manager: Jacob  Fesseha @Nigusi-Artabanus [Digital Portfolio](https://codermerlin.academy/users/jacob-fesseha/Digital%20Portfolio/index.html)**
 
 ---
 # One time Pad encryption implementaion
