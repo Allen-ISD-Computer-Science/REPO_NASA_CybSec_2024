@@ -21,7 +21,7 @@ https://codermerlin.academy/users/srujan-sannidhi/Digital%20Portfolio/index.html
 https://codermerlin.academy/users/andrewm-lin/Digital%20Portfolio/index.html
 
 **Back End Developer: Aditya Sudharshan @ditya-beta**
-https://codermerlin.academy/users/aditya-sudharshan/Digital%20Portfolio/CS-I/index.html
+ https://codermerlin.academy/users/aditya-sudharshan/Digital%20Portfolio/CS-I/index.html
 
 **Project Manager: Jacob Fesseha @Nigusi-Artabanus**
 https://codermerlin.academy/users/jacob-fesseha/Digital%20Portfolio/index.html
