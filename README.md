@@ -10,6 +10,8 @@ https://codermerlin.academy/users/vansh-Bhat/Digital%20Portfolio/
 https://www.codermerlin.academy/users/ming-ruei-jang/Digital%20Portfolio/index.html
 **UI/UX: Tanay Sreedharan @stuffysaturn**
 https://codermerlin.academy/users/tanay-sreedharan/Digital%20Portfolio/index.html
+**RM: Srujan Sannidhi @s-sannidhi**
+https://codermerlin.academy/users/srujan-sannidhi/Digital%20Portfolio/index.html
 
 ---
 # One time Pad encryption implementaion
