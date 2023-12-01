@@ -3,11 +3,11 @@
 ---
 ## Roles:
 **Project Manager: Abel Semahegn @abelSemahegn** 
-https://codermerlin.academy/users/abel-semahegn/Digital%20Portfolio/
-/
+https://codermerlin.academy/users/abel-semahegn/Digital%20Portfolio/index.html
+
 **Front End Developer: Vansh Bhatt @theogflamez**
-https://codermerlin.academy/users/vansh-bhatt/Digital%20Portfolio/
-/
+https://codermerlin.academy/users/vansh-bhatt/Digital%20Portfolio/index.html
+
 **QA: Richard Jang @Richard-Jang**
 https://www.codermerlin.academy/users/ming-ruei-jang/Digital%20Portfolio/index.html
 
