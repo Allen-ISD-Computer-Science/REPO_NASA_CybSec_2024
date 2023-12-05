@@ -32,7 +32,7 @@ This is the method of reading and encrypting the text
 
 ### 1. Git Cloning a Repo:
 
-```bash.
+```bash
 git clone <repository_url>
 ```
 
