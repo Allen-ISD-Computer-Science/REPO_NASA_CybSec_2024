@@ -57,7 +57,7 @@ git push origin <your_branch_name>
 
 Replace `<your_branch_name>` with the name of your branch. The sequence of commands adds changes, commits them with a message, and then pushes the changes to the remote repository.
 
-### 4. Go to github and make a pr (Pull Request)
+### 4. Go to github and make a pr(Pull Request)
 
 
 ### 5.Close branch on your machine
