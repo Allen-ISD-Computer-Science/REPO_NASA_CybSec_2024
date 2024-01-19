@@ -131,4 +131,4 @@ In summary, building a WAN in space with LoRa, OTP, and quantum-resistant algori
 	* Image
 	* document
 	* media
-* Create a presentation
+* Create a presentation - [Slides link](https://docs.google.com/presentation/d/1AQqGboY-F6YAWDqTksTL0u90sNOWPKpcige1Z7kMyDA/edit?usp=sharing)
