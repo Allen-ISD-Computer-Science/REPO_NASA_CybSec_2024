@@ -27,7 +27,14 @@ function App() {
       <div className="column">
           <div className="titleItem"><h2>Send</h2></div>
           <div class="subheading"><h3>Upload files to send</h3></div>
-          <div><input type="file" id="my_file_input" /></div>
+          <div className="subheading">
+            <label for="file-upload" class="custom-file-upload">
+              <div className="fileAdd">
+                +
+              </div>
+            </label>
+            <input id="file-upload" type="file"/>
+            </div>
       </div>
       <div className="column">
           <div className="titleItem"><h2>Recieve</h2></div>
