@@ -1,3 +1,8 @@
+# Instructions to send files over UDP
+# sudo ufw allow #port/udp
+# cat file.jpg | nc -u 192.168.x.x #port (on the source machine)
+
+
 import os
 import socket
 import sys
