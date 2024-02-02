@@ -1,3 +1,8 @@
+# Instructions to set up UDP file receiving
+# sudo ufw allow #port/udp
+# nc -u -l -p #port > newfile.jpg (on the destination machine)
+
+
 import socket
 import sys
 # Progress bar (pip install tqdm) later
