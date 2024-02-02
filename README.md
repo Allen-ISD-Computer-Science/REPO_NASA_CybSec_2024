@@ -132,3 +132,29 @@ In summary, building a WAN in space with LoRa, OTP, and quantum-resistant algori
 	* document
 	* media
 * Create a presentation - [Slides link](https://docs.google.com/presentation/d/1AQqGboY-F6YAWDqTksTL0u90sNOWPKpcige1Z7kMyDA/edit?usp=sharing)
+# Network Basics
+These are the basic components of our network designs
+## Switches
+* They connect devices in a network together by sending each other packets
+* They connect end devices with the same Subnet Mask (ex: all devices with mask 255.0.0.0 can communicate with each other but not with subnet mask 255.255.0.0)
+* They do not have an IP and are just a pathway for packets
+## Routers
+* They connect small networks through switches for different subnet masks to communicate
+* Their ports can be assigned different IP values which allows them to connect to many subnet masks
+* Due to their ports they have several IP addresses which can all be pinged by end devices
+## Central Office Server
+* They are a special type of server that can wirelessly communicate with devices
+* They can connect to radar towers which is useful for exploration communication and communication back to Earth
+* They can also connect to end devices like PCs through routers and switches through their IP address
+## Radar Tower
+* They are similar to switches except for they're wireless
+* They have an IP address to connect phones and COS but they can't be pinged as they are only  gateway
+## End Devices
+* These are the devices users will be using (For our designs Phones & PCs)
+* These are configured with their own unique IP addresses and communicate with each other using the rest of the network
+* In a well-set-up network all devices should be able to ping each other with no errors
+## Connections
+* Copper Straight Through: Ethernet cable connection between switches, routers, and PCs
+* Copper Crossover: Ethernet cable for connection between the same type of devices (ie: PC to PC) or between routers/switches and network hubs like servers
+* Coaxial: It's a cable type to connect radar devices like dishes and towers to COS
+* 3/4G Wireless Connection: Broadband cellular network technology for wireless connection
