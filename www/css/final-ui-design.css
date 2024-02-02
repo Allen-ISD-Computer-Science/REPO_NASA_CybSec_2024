@@ -1,0 +1,271 @@
+.navigation-links2-nav {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.navigation-links2-text {
+  color: #ffffff;
+  font-family: "Exo 2";
+}
+.navigation-links2-text1 {
+  color: #ffffff;
+  font-family: "Exo 2";
+  margin-left: var(--dl-space-space-twounits);
+}
+.navigation-links2-text2 {
+  color: #ffffff;
+  font-family: "Exo 2";
+  margin-left: var(--dl-space-space-twounits);
+}
+.navigation-links2-text3 {
+  color: #ffffff;
+  font-family: "Exo 2";
+  margin-left: var(--dl-space-space-twounits);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.final-ui-design-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--dl-color-custom-neutral-dark);
+}
+.final-ui-design-header {
+  width: 100%;
+  display: flex;
+  z-index: 100;
+  position: fixed;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--dl-color-gray-white);
+}
+.final-ui-design-header1 {
+  width: 100%;
+  height: 125px;
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  padding-top: var(--dl-space-space-twounits);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  padding-bottom: var(--dl-space-space-twounits);
+  justify-content: space-between;
+  background-color: var(--dl-color-primary-100);
+}
+.final-ui-design-nav {
+  flex: 0 0 auto;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.final-ui-design-burger-menu {
+  display: none;
+}
+.final-ui-design-icon {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+  display: flex;
+}
+.final-ui-design-mobile-menu {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  padding: 32px;
+  z-index: 100;
+  position: absolute;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.final-ui-design-nav1 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.final-ui-design-container1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--dl-space-space-threeunits);
+  justify-content: space-between;
+}
+.final-ui-design-image {
+  height: 2rem;
+}
+.final-ui-design-close-mobile-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.final-ui-design-icon02 {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+}
+.final-ui-design-icon04 {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+  margin-right: var(--dl-space-space-twounits);
+}
+.final-ui-design-icon06 {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+  margin-right: var(--dl-space-space-twounits);
+}
+.final-ui-design-icon08 {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+}
+.final-ui-design-navlink {
+  display: contents;
+}
+.final-ui-design-pasted-image {
+  top: -6px;
+  left: 38px;
+  width: 244px;
+  height: 137px;
+  position: absolute;
+  text-decoration: none;
+}
+.final-ui-design-hero {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-top: 96px;
+  align-items: flex-start;
+  justify-content: center;
+}
+.final-ui-design-hero1 {
+  height: 308px;
+  position: relative;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.final-ui-design-container2 {
+  gap: var(--dl-space-space-oneandhalfunits);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.final-ui-design-hero-sub-heading {
+  font-size: 18px;
+  text-align: center;
+}
+.final-ui-design-btn-group {
+  gap: var(--dl-space-space-oneandhalfunits);
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.final-ui-design-hero-heading {
+  font-size: 48px;
+  max-width: 800px;
+  text-align: center;
+  font-family: "Exo 2";
+  font-weight: 700;
+  line-height: 150%;
+}
+.final-ui-design-features {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.final-ui-design-features1 {
+  gap: var(--dl-space-space-threeunits);
+  width: 100%;
+  display: flex;
+  max-width: var(--dl-size-size-maxwidth);
+  align-items: center;
+  padding-top: var(--dl-space-space-footer);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-footer);
+  justify-content: flex-start;
+}
+.final-ui-design-container3 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.final-ui-design-features-heading {
+  font-size: 35px;
+  font-family: "Exo 2";
+  font-weight: 600;
+  line-height: 150%;
+  margin-bottom: var(--dl-space-space-oneandhalfunits);
+  animation-name: fadeInLeft;
+  animation-delay: 0s;
+  animation-duration: 3s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+.final-ui-design-features-sub-heading {
+  font-size: 18px;
+  text-align: center;
+}
+.final-ui-design-banner {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.final-ui-design-banner1 {
+  height: 314px;
+}
+.final-ui-design-banner-sub-heading {
+  max-width: var(--dl-size-size-maxwidth);
+  margin-top: var(--dl-space-space-twounits);
+  text-align: center;
+  margin-bottom: var(--dl-space-space-twounits);
+}
+.final-ui-design-faq {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.final-ui-design-faq-container {
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+}
+.final-ui-design-footer {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}

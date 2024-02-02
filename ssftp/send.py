@@ -3,9 +3,12 @@ import socket
 import sys
 
 # Set Port Number, File Name, and Host IP
-port = int(input("Port: "))
-host = str(input("IP: "))
-fileName = str(input("Name of the file: "))
+#port = int(input("Port: "))
+#host = str(input("IP: "))
+port = 3000
+host = "localhost"
+#fileName = str(input("Name of the file: "))
+fileName = "example.txt"
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect((host, port))
