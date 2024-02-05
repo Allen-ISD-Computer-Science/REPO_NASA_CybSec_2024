@@ -13,7 +13,7 @@ args = parser.parse_args()
 
 def openPort():
     HOST = None
-    PORT = 3000
+    PORT = 69420 #Set ports that the machine are listening and reciving on
     s = None
     for res in socket.getaddrinfo(HOST, PORT, socket.AF_UNSPEC, socket.SOCK_STREAM, 0, socket.AI_PASSIVE):
         af, socktype, proto, canonname, sa = res
