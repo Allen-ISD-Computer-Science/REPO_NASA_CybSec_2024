@@ -139,7 +139,7 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.meet-the-team-container01 {
+.meet-the-team-container1 {
   width: 100%;
   display: flex;
   align-items: center;
@@ -193,29 +193,11 @@
   justify-content: center;
 }
 .meet-the-team-hero1 {
-  height: 154px;
+  height: 147px;
   position: relative;
   align-items: center;
   flex-direction: row;
   justify-content: center;
-}
-.meet-the-team-container02 {
-  gap: var(--dl-space-space-oneandhalfunits);
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.meet-the-team-hero-sub-heading {
-  font-size: 18px;
-  text-align: center;
-}
-.meet-the-team-btn-group {
-  gap: var(--dl-space-space-oneandhalfunits);
-  border: 2px dashed rgba(120, 120, 120, 0.4);
-  display: flex;
-  align-items: center;
-  flex-direction: row;
 }
 .meet-the-team-hero-heading {
   font-size: 60px;
@@ -224,78 +206,6 @@
   font-family: "Exo 2";
   font-weight: 700;
   line-height: 150%;
-}
-.meet-the-team-features {
-  flex: 0 0 auto;
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.meet-the-team-features-container {
-  position: relative;
-}
-.meet-the-team-features1 {
-  gap: var(--dl-space-space-threeunits);
-  width: 100%;
-  height: 351px;
-  display: flex;
-  max-width: var(--dl-size-size-maxwidth);
-  align-items: center;
-  padding-top: var(--dl-space-space-footer);
-  padding-left: var(--dl-space-space-threeunits);
-  border-radius: var(--dl-radius-radius-radius4);
-  padding-right: var(--dl-space-space-threeunits);
-  flex-direction: column;
-  padding-bottom: var(--dl-space-space-footer);
-  justify-content: flex-start;
-}
-.meet-the-team-container03 {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.meet-the-team-features-sub-heading {
-  font-size: 18px;
-  text-align: center;
-}
-.meet-the-team-container04 {
-  flex: 0 0 auto;
-  width: 100%;
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: flex-start;
-}
-.meet-the-team-text32 {
-  top: 53px;
-  left: 535px;
-  position: absolute;
-  font-size: 48px;
-  font-family: "Exo 2";
-  animation-name: fadeIn;
-  animation-delay: 0s;
-  animation-duration: 4s;
-  animation-direction: normal;
-  animation-iteration-count: 1;
-  animation-timing-function: ease;
-}
-.meet-the-team-pasted-image1 {
-  top: 7px;
-  left: 289px;
-  width: 211px;
-  height: 211px;
-  position: absolute;
-  border-radius: var(--dl-radius-radius-round);
-}
-.meet-the-team-text33 {
-  top: 114px;
-  left: 536px;
-  position: absolute;
-  font-size: 24px;
-  font-family: "Exo 2";
 }
 .meet-the-team-banner {
   flex: 0 0 auto;
@@ -306,19 +216,13 @@
   justify-content: center;
 }
 .meet-the-team-banner1 {
-  height: 1472px;
+  height: 1767px;
   position: relative;
 }
-.meet-the-team-banner-sub-heading {
-  max-width: var(--dl-size-size-maxwidth);
-  margin-top: var(--dl-space-space-twounits);
-  text-align: center;
-  margin-bottom: var(--dl-space-space-twounits);
-}
-.meet-the-team-container05 {
-  top: 48px;
+.meet-the-team-container2 {
+  top: 332px;
   flex: 0 0 auto;
-  left: 51px;
+  left: 78px;
   width: 1119px;
   height: 230px;
   display: flex;
@@ -332,14 +236,14 @@
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-.meet-the-team-text48 {
+.meet-the-team-text04 {
   top: 115px;
   left: 218px;
   position: absolute;
   font-size: 20px;
   font-family: "Exo 2";
 }
-.meet-the-team-text49 {
+.meet-the-team-text05 {
   top: 64px;
   left: 214px;
   position: absolute;
@@ -355,7 +259,7 @@
   object-fit: cover;
   border-radius: var(--dl-radius-radius-round);
 }
-.meet-the-team-text50 {
+.meet-the-team-text06 {
   top: 65px;
   left: 619px;
   width: var(--dl-size-size-xxlarge);
@@ -372,14 +276,14 @@
   object-fit: cover;
   border-radius: var(--dl-radius-radius-round);
 }
-.meet-the-team-text54 {
+.meet-the-team-text10 {
   top: 114px;
   left: 514px;
   position: absolute;
   font-size: 20px;
   font-family: "Exo 2";
 }
-.meet-the-team-container06 {
+.meet-the-team-container3 {
   flex: 0 0 auto;
   width: auto;
   height: 230px;
@@ -387,10 +291,10 @@
   align-items: flex-start;
   justify-content: center;
 }
-.meet-the-team-container07 {
-  top: 601px;
+.meet-the-team-container4 {
+  top: 841px;
   flex: 0 0 auto;
-  left: 51px;
+  left: 66px;
   width: 1119px;
   height: 230px;
   display: flex;
@@ -404,21 +308,21 @@
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-.meet-the-team-text55 {
+.meet-the-team-text11 {
   top: 117px;
   left: 224px;
   position: absolute;
   font-size: 20px;
   font-family: "Exo 2";
 }
-.meet-the-team-text56 {
+.meet-the-team-text12 {
   top: 64px;
   left: 221px;
   position: absolute;
   font-size: 35px;
   font-family: "Exo 2";
 }
-.meet-the-team-text57 {
+.meet-the-team-text13 {
   top: 63px;
   left: 565px;
   width: 400px;
@@ -426,7 +330,7 @@
   font-size: 35px;
   font-family: "Exo 2";
 }
-.meet-the-team-pasted-image2 {
+.meet-the-team-pasted-image1 {
   top: 0px;
   right: 16px;
   width: 220px;
@@ -434,14 +338,14 @@
   position: absolute;
   border-radius: var(--dl-radius-radius-round);
 }
-.meet-the-team-text60 {
+.meet-the-team-text16 {
   top: 113px;
   left: 694px;
   position: absolute;
   font-size: 20px;
   font-family: "Exo 2";
 }
-.meet-the-team-pasted-image3 {
+.meet-the-team-pasted-image2 {
   top: 6px;
   left: -16px;
   width: 220px;
@@ -449,7 +353,7 @@
   position: absolute;
   border-radius: var(--dl-radius-radius-round);
 }
-.meet-the-team-container08 {
+.meet-the-team-container5 {
   flex: 0 0 auto;
   width: auto;
   height: 230px;
@@ -457,7 +361,7 @@
   align-items: flex-start;
   justify-content: center;
 }
-.meet-the-team-container09 {
+.meet-the-team-container6 {
   flex: 0 0 auto;
   width: auto;
   height: 230px;
@@ -465,10 +369,10 @@
   align-items: flex-start;
   justify-content: center;
 }
-.meet-the-team-container10 {
-  top: 826px;
+.meet-the-team-container7 {
+  top: 1103px;
   flex: 0 0 auto;
-  left: 53px;
+  left: 54px;
   width: 1119px;
   height: 230px;
   display: flex;
@@ -482,7 +386,7 @@
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-.meet-the-team-text61 {
+.meet-the-team-text17 {
   top: 53px;
   right: -815px;
   width: var(--dl-size-size-maxwidth);
@@ -490,14 +394,14 @@
   font-size: 35px;
   font-family: "Exo 2";
 }
-.meet-the-team-text64 {
+.meet-the-team-text20 {
   top: 103px;
   left: 536px;
   position: absolute;
   font-size: 20px;
   font-family: "Exo 2";
 }
-.meet-the-team-pasted-image4 {
+.meet-the-team-pasted-image3 {
   top: -12px;
   left: 299px;
   width: 220px;
@@ -505,10 +409,10 @@
   position: absolute;
   border-radius: var(--dl-radius-radius-round);
 }
-.meet-the-team-container11 {
-  top: 333px;
+.meet-the-team-container8 {
+  top: 579px;
   flex: 0 0 auto;
-  left: 47px;
+  left: 72px;
   width: 1119px;
   height: 230px;
   display: flex;
@@ -522,21 +426,21 @@
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-.meet-the-team-text65 {
+.meet-the-team-text21 {
   top: 115px;
   left: 218px;
   position: absolute;
   font-size: 20px;
   font-family: "Exo 2";
 }
-.meet-the-team-text66 {
+.meet-the-team-text22 {
   top: 64px;
   left: 214px;
   position: absolute;
   font-size: 35px;
   font-family: "Exo 2";
 }
-.meet-the-team-text67 {
+.meet-the-team-text23 {
   top: 63px;
   left: 565px;
   width: var(--dl-size-size-xxlarge);
@@ -544,7 +448,7 @@
   font-size: 35px;
   font-family: "Exo 2";
 }
-.meet-the-team-pasted-image5 {
+.meet-the-team-pasted-image4 {
   top: 6px;
   left: -16px;
   width: 220px;
@@ -552,7 +456,7 @@
   position: absolute;
   border-radius: var(--dl-radius-radius-round);
 }
-.meet-the-team-pasted-image6 {
+.meet-the-team-pasted-image5 {
   top: -4px;
   right: 25px;
   width: 217px;
@@ -566,11 +470,26 @@
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-.meet-the-team-text70 {
+.meet-the-team-text26 {
   top: 113px;
   left: 709px;
   position: absolute;
   font-size: 20px;
+  font-family: "Exo 2";
+}
+.meet-the-team-pasted-image6 {
+  top: 7px;
+  left: 289px;
+  width: 211px;
+  height: 211px;
+  position: absolute;
+  border-radius: var(--dl-radius-radius-round);
+}
+.meet-the-team-text27 {
+  top: 114px;
+  left: 536px;
+  position: absolute;
+  font-size: 24px;
   font-family: "Exo 2";
 }
 .meet-the-team-faq {
@@ -592,4 +511,19 @@
   position: relative;
   align-items: center;
   justify-content: center;
+}
+.meet-the-team-pasted-image7 {
+  top: 7px;
+  left: 289px;
+  width: 211px;
+  height: 211px;
+  position: absolute;
+  border-radius: var(--dl-radius-radius-round);
+}
+.meet-the-team-text28 {
+  top: 114px;
+  left: 536px;
+  position: absolute;
+  font-size: 24px;
+  font-family: "Exo 2";
 }

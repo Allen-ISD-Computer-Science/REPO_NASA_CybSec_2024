@@ -371,7 +371,11 @@
   width: 527px;
   bottom: 97px;
   height: 392px;
+  display: flex;
   position: absolute;
+  background-size: cover;
+  background-image: url("public/external/pastedimage-aax-600w.png");
+  background-position: center;
 }
 .progress-pasted-image09 {
   left: 1px;
