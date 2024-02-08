@@ -29,6 +29,11 @@
 # One time Pad encryption implementaion
 This is the method of reading and encrypting the text
 
+# Staging website
+https://codermerlin.app/sites/nasacybsec.org/
+
+# Production website:
+https://codermerlin.app/sites/nasacybsec.org/
 
 ### 1. Git Cloning a Repo:
 
