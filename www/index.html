@@ -16,6 +16,27 @@
                 animation: fadeInAnimation ease 3s;
             }
 
+            .buttonTitle {
+                color: #CCCCCC;
+                background-color: #2F3D50;
+                border: none;
+                border-radius: 0;
+                animation: fadeInAnimation ease 1.5s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+            }
+
+            .buttonTitle:hover {
+                color: #CCCCCC;
+                background-color: #2F3D50;
+                border: none;
+                transition: .2s;
+            }
+
+            .collapse {
+                background-color: #3F4D60;
+            }
+
             @keyframes fadeInAnimation {
                 0% {
                     opacity: 0;
@@ -128,32 +149,91 @@
 
             <div class="d-flex flex-column justify-content-center align-items-center" style="width: 100%; background-color: #2F3D50; color: #ffffff;">
                 <div class="container" style=" width: 80%; margin-bottom: 3rem; margin-left: 10%; margin-right: 10%;">
-                    <h1 style="margin-top: 3rem; text-align: center; margin-bottom: 3rem;">FAQ</h1>
-                    <h4>What is the purpose of our NASA Hunch Network Security Design?</h4>
-                    <p style="text-indent: 1rem; margin-bottom: 2rem;">
-                        The purpose of the NASA Hunch Network Security Design is to securely share files and data within the NASA network without 
-                        data loss due to environmental factors in space.
-                    </p>
-
-                    <h4>Why use our NASA Hunch Network Security Design?</h4>
-                    <p style="text-indent: 1rem; margin-bottom: 2rem;">
-                        The current issues with data corruption through cosmic/gamma rays: The first step to data integrity is being aware of 
-                        environmental issues BEFORE transferring files. In outer space, the transfer of data can become corrupted by astronomical 
-                        objects that have a changing magnetic field, such as the planets and our Sun.
-                    </p>
-
-                    <h4>How secure is the NASA Hunch Network Security Design?</h4>
-                    <p style="text-indent: 1rem; margin-bottom: 2rem;">
-                        As an extra layer of security, the different devices that carry out the Network Security Design each have different levels 
-                        of clearance and permissions ranging from a Level 1-4. Thus, lower chances of a hack.
-                    </p>
-
-                    <h4>How fast can the NASA Hunch Network Security Design share data?</h4>
-                    <p style="text-indent: 1rem; margin-bottom: 2rem;">
-                        The NASA Hunch Network Security Design prototype can currently send about 500 Megabytes per second (will be even faster).
-                    </p>
+                    <h1 style="margin-top: 3rem; text-align: center; margin-bottom: 1rem;">FAQ</h1>
                 </div>
             </div>
+            
+            <div class="d-flex flex-column justify-content-center align-items-center" style="width: 100%; background-color: #2F3D50; color: #ffffff;">
+                <div class="container" style=" width: 80%; margin-bottom: 1rem; margin-left: 10%; margin-right: 10%;">
+                    <button class="btn buttonTitle d-flex flex-row justify-content-between align-items-center" style="background-color: #4F5D70; width: 100%;" onclick="changeIcon(1)" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+                        <div style="text-align: left; width: 75%;">
+                            <h3 style="margin-top: 0.5rem;">What is the purpose of our NASA Hunch Network Security Design?</h3>
+                        </div>
+                        <img src="./img/ico/More.png" style="width: 2rem; display: block;" id="iconMore1">
+                        <img src="./img/ico/Less.png" style="width: 2rem; display: none;" id="iconLess1">
+                    </button>
+                    <div class="collapse" id="collapseExample1">
+                        <div class="card card-body d-flex flex-col justify-content-center align-items-center" style="background-color: #3F4D60; color: #ffffff;">
+                            <p style="text-indent: 1rem; margin-bottom: 0rem;">
+                                The purpose of the NASA Hunch Network Security Design is to securely share files and 
+                                data within the NASA network without data loss due to environmental factors in space.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column justify-content-center align-items-center" style="width: 100%; background-color: #2F3D50; color: #ffffff;">
+                <div class="container" style=" width: 80%; margin-bottom: 1rem; margin-left: 10%; margin-right: 10%;">
+                    <button class="btn buttonTitle d-flex flex-row justify-content-between align-items-center" style="background-color: #4F5D70; width: 100%;" onclick="changeIcon(2)" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                        <div style="text-align: left; width: 75%;">
+                            <h3 style="margin-top: 0.5rem;">Why use our NASA Hunch Network Security Design?</h3>
+                        </div>
+                        <img src="./img/ico/More.png" style="width: 2rem; display: block;" id="iconMore2">
+                        <img src="./img/ico/Less.png" style="width: 2rem; display: none;" id="iconLess2">
+                    </button>
+                    <div class="collapse" id="collapseExample2">
+                        <div class="card card-body d-flex flex-col justify-content-center align-items-center" style="background-color: #3F4D60; color: #ffffff;">
+                            <p style="text-indent: 1rem; margin-bottom: 0rem;">
+                                The current issues with data corruption through cosmic/gamma rays: The first step 
+                                to data integrity is being aware of environmental issues BEFORE transferring files. 
+                                In outer space, the transfer of data can become corrupted by astronomical objects 
+                                that have a changing magnetic field, such as the planets and our Sun.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column justify-content-center align-items-center" style="width: 100%; background-color: #2F3D50; color: #ffffff;">
+                <div class="container" style=" width: 80%; margin-bottom: 1rem; margin-left: 10%; margin-right: 10%;">
+                    <button class="btn buttonTitle d-flex flex-row justify-content-between align-items-center" style="background-color: #4F5D70; width: 100%;" onclick="changeIcon(3)" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+                        <div style="text-align: left; width: 75%;">
+                            <h3 style="margin-top: 0.5rem;">How secure is the NASA Hunch Network Security Design?</h3>
+                        </div>
+                        <img src="./img/ico/More.png" style="width: 2rem; display: block;" id="iconMore3">
+                        <img src="./img/ico/Less.png" style="width: 2rem; display: none;" id="iconLess3">
+                    </button>
+                    <div class="collapse" id="collapseExample3">
+                        <div class="card card-body d-flex flex-col justify-content-center align-items-center" style="background-color: #3F4D60; color: #ffffff;">
+                            <p style="text-indent: 1rem; margin-bottom: 0rem;">
+                                As an extra layer of security, the different devices that carry out the Network Security Design each have different levels 
+                                of clearance and permissions ranging from a Level 1-4. Thus, lower chances of a hack.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column justify-content-center align-items-center" style="width: 100%; background-color: #2F3D50; color: #ffffff;">
+                <div class="container" style=" width: 80%; margin-bottom: 4rem; margin-left: 10%; margin-right: 10%;">
+                    <button class="btn buttonTitle d-flex flex-row justify-content-between align-items-center" style="background-color: #4F5D70; width: 100%;" onclick="changeIcon(4)" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
+                        <div style="text-align: left; width: 75%;">
+                            <h3 style="margin-top: 0.5rem;">How fast can the NASA Hunch Network Security Design share data?</h3>
+                        </div>
+                        <img src="./img/ico/More.png" style="width: 2rem; display: block;" id="iconMore4">
+                        <img src="./img/ico/Less.png" style="width: 2rem; display: none;" id="iconLess4">
+                    </button>
+                    <div class="collapse" id="collapseExample4">
+                        <div class="card card-body d-flex flex-col justify-content-center align-items-center" style="background-color: #3F4D60; color: #ffffff;">
+                            <p style="text-indent: 1rem; margin-bottom: 0rem;">
+                                The NASA Hunch Network Security Design prototype can currently send about 500 Megabytes per second (will be even faster).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <footer class="footer" style="background-color: #040A12; color: #ffffff; width: 100%; position: absolute;">
@@ -161,5 +241,23 @@
                 <span class="footer-text">NASA Hunch Cybersecurity 2023-2024</span>
             </div>
         </footer>
+
+        <script>
+            function changeIcon(identify) {
+                var elementsMore = document.getElementById("iconMore" + String(identify))
+                var elementsLess = document.getElementById("iconLess" + String(identify))
+                if (elementsMore.style.display === "block") {
+                    elementsMore.style.display = "none";
+                } else {
+                    elementsMore.style.display = "block";
+                }
+                if (elementsLess.style.display === "block") {
+                    elementsLess.style.display = "none";
+                } else {
+                    elementsLess.style.display = "block";
+                }
+            };
+        </script>
+
     </body>
 </html>
