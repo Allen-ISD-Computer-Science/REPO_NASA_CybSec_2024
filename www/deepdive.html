@@ -20,9 +20,6 @@
                 background-color: #2F3D50;
                 border: none;
                 border-radius: 0;
-                animation: fadeInAnimation ease 1.5s;
-                animation-iteration-count: 1;
-                animation-fill-mode: forwards;
             }
 
             .buttonTitle:hover {
@@ -34,6 +31,12 @@
 
             .collapse {
                 background-color: #3F4D60;
+            }
+
+            .content {
+                animation: fadeInAnimation ease 1.5s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
             }
 
             @keyframes fadeInAnimation {
@@ -95,7 +98,12 @@
             <div style="margin-top: 8rem;"></div>
         </div>
 
-        <div class="d-flex flex-column justify-content-evenly align-items-center" style="width: 80%; margin-left: 10%; margin-right: 10%;">
+        <div class="content d-flex flex-column justify-content-evenly align-items-center" style="width: 80%; margin-left: 10%; margin-right: 10%;">
+
+            <div style="color: #ffffff;">
+                <h1>A Deep Dive</h1>
+            </div>
+
             <div style="margin-top: 2rem; margin-bottom: 1rem; text-indent: 2rem; width: 100%;">
                 <button class="btn buttonTitle d-flex flex-row justify-content-between align-items-center" style="width: 100%;" onclick="changeIcon(1)" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
                     <div style="text-align: left; width: 75%;">
@@ -166,7 +174,7 @@
                             that the state of one particle is directly related to the state of another, regardless of the distance between them. 
                             QKD systems leverage entangled particles to create a shared secret key.
                         </p>
-                        <p>
+                        <p class="align-self-start" style="text-indent: 0;">
                             The process for using these quantum principles to verify file integrity through transfers is as such:
                         </p>
                         <ol style="text-indent: 0;">
@@ -370,11 +378,14 @@
             function changeIcon(identify) {
                 var elementsMore = document.getElementById("iconMore" + String(identify))
                 var elementsLess = document.getElementById("iconLess" + String(identify))
+
+                // Collapsed
                 if (elementsMore.style.display === "block") {
                     elementsMore.style.display = "none";
                 } else {
                     elementsMore.style.display = "block";
                 }
+                // Expanded
                 if (elementsLess.style.display === "block") {
                     elementsLess.style.display = "none";
                 } else {
