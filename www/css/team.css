@@ -60,8 +60,8 @@ body {
 .headshot {
     margin-top: 1rem;
     width: 75%;
-    aspect-ratio: 1;
     border-radius: 50em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .name {
