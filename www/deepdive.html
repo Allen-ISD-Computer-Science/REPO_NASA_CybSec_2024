@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        
+        <link href="./img/ico/shieldIcon.png" rel="icon" type="image/x-icon" />
         <style>
             body {
                 background-color: #141A22;
@@ -96,7 +96,7 @@
         </div>
 
         <div class="d-flex flex-column justify-content-evenly align-items-center" style="width: 80%; margin-left: 10%; margin-right: 10%;">
-            <div style="margin-top: 2rem; margin-bottom: 3rem; text-indent: 2rem; width: 100%;">
+            <div style="margin-top: 2rem; margin-bottom: 1rem; text-indent: 2rem; width: 100%;">
                 <button class="btn buttonTitle d-flex flex-row justify-content-between align-items-center" style="width: 100%;" onclick="changeIcon(1)" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
                     <div style="text-align: left; width: 75%;">
                         <h3 style="margin-top: 0.5rem;">Data Corruption</h3>
@@ -138,7 +138,7 @@
                 </div>
             </div>
 
-            <div style="margin-top: 2rem; margin-bottom: 3rem; text-indent: 2rem; width: 100%;">
+            <div style="margin-top: 2rem; margin-bottom: 1rem; text-indent: 2rem; width: 100%;">
                 <button class="btn buttonTitle d-flex flex-row justify-content-between align-items-center" style="width: 100%;" onclick="changeIcon(2)" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
                     <div style="text-align: left; width: 75%;">
                         <h3 style="margin-top: 0.5rem;">Data Security</h3>
@@ -199,7 +199,7 @@
                 </div>
             </div>
 
-            <div style="margin-top: 2rem; margin-bottom: 3rem; text-indent: 2rem; width: 100%;">
+            <div style="margin-top: 2rem; margin-bottom: 1rem; text-indent: 2rem; width: 100%;">
                 <button class="btn buttonTitle d-flex flex-row justify-content-between align-items-center" style="width: 100%;" onclick="changeIcon(3)" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
                     <div style="text-align: left; width: 75%;">
                         <h3 style="margin-top: 0.5rem;">Data Redundancy</h3>
@@ -235,7 +235,7 @@
                 </div>
             </div>
 
-            <div style="margin-top: 2rem; margin-bottom: 3rem; text-indent: 2rem; width: 100%;">
+            <div style="margin-top: 2rem; margin-bottom: 1rem; text-indent: 2rem; width: 100%;">
                 <button class="btn buttonTitle d-flex flex-row justify-content-between align-items-center" style="width: 100%;" onclick="changeIcon(5)" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample">
                     <div style="text-align: left; width: 75%;">
                         <h3 style="margin-top: 0.5rem;">Human Threats</h3>
@@ -275,7 +275,7 @@
                 </div>
             </div>
 
-            <div style="margin-top: 2rem; margin-bottom: 3rem; text-indent: 2rem; width: 100%; width: 100%;">
+            <div style="margin-top: 2rem; margin-bottom: 6rem; text-indent: 2rem; width: 100%; width: 100%;">
                 <button class="btn buttonTitle d-flex flex-row justify-content-between align-items-center" style="width: 100%;" onclick="changeIcon(4)" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
                     <div style="text-align: left; width: 75%;">
                         <h3 style="margin-top: 0.5rem;">Security Best Practices</h3>
@@ -350,7 +350,7 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <div style="text-align: left;">
+                        <div class="align-self-start" style="text-align: left;">
                             <p>The levels of permissions of each device in the top right corner should be (subject to change/discussion):</p>
                             <ul>
                                 <li><p>Radar Dish - Level 0, 1, and 2</p></li>
@@ -365,7 +365,7 @@
                 </div>
             </div>
         </div>
-    </div>
+
         <script>
             function changeIcon(identify) {
                 var elementsMore = document.getElementById("iconMore" + String(identify))
@@ -382,5 +382,11 @@
                 }
             };
         </script>
+
+        <footer class="footer position-absolute" style="background-color: #040A12; color: #ffffff; width: 100%; bottom: 0;">
+            <div class="container d-flex flex-column justify-content-center align-items-center" style="margin-top: .5rem; margin-bottom: .5rem;">
+                <span class="footer-text">NASA Hunch Cybersecurity 2023-2024</span>
+            </div>
+        </footer>
     </body>
 </html>

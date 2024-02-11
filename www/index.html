@@ -1,376 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>
-      NASA Cybersecurity
-    </title>
-    <meta
-      name="description"
-      content="NASA Cybersecurity allows you to protect and secure your files from space without a risk from a hacker or data loss from enviornmental space condition."
-    />
-    <meta
-      property="og:title"
-      content="Protect your secure files from space without risk of data loss &amp; hack"
-    />
-    <meta
-      property="og:description"
-      content="NASA Cybersecurity allows you to protect and secure your files from space without a risk from a hacker or data loss from enviornmental space condition."
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <head>
+        <title>NASA CyberSecurity</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link href="./img/ico/shieldIcon.png" rel="icon" type="image/x-icon" />
+            
+        <style>
+            body {
+                background-color: #141A22;
+            }
 
-    <meta property="twitter:card" content="summary_large_image" />
+            .content {
+                animation: fadeInAnimation ease 3s;
+            }
 
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: Inter;
-        font-size: 16px;
-      }
+            @keyframes fadeInAnimation {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-gray-black);
-        background-color: var(--dl-color-gray-white);
-
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/animate.css@4.1.1/animate.css"
-    />
-    <link
-      rel="shortcut icon"
-      href="public/6783360.png"
-      type="icon/png"
-      sizes="32x32"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
-    />
-    <style>
-      @keyframes fade-in-left {
-        0% {
-          opacity: 0;
-          transform: translateX(-20px);
-        }
-        100% {
-          opacity: 1;
-          transform: translateX(0);
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="./css/style.css" />
-    <div style="background-color: #141A22;">
-      <link href="./css/index.css" rel="stylesheet" />
-
-      <div style="background-color: #003EBD; width: 100vw; margin-bottom: 4rem;">
-        <div class="d-flex flex-row justify-content-between align-items-center" style="width: 90%; margin-left: 5%; margin-right: 5%;">
-            <nav class="navbar fixed-top" style="background-color: #003EBD; color: white;">
-                <div class="container-fluid">
-                    <img
-                        alt="pastedImage"
-                        src="./img/ico/CyberSec.png"
-                        style="width: 10rem;"
-                    />
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                        <img src="./img/ico/Menu.png" style="width: 3rem; border: none;">
-                    </button>
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: #141A22; color: #ffffff;">
-                        <div class="offcanvas-header">
-                            <h3 class="offcanvas-title" id="offcanvasNavbarLabel">NASA CyberSecurity</h3>
-                            <button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close">
-                                <img src="./img/ico/Close.png" style="width: 3rem; border: none;">
-                            </button>
+        <link rel="stylesheet" href="./css/style.css" />
+        <link href="./css/index.css" rel="stylesheet" />
+        
+        <div style="background-color: #003EBD; width: 100vw; margin-bottom: 7rem;">
+            <div class="d-flex flex-row justify-content-between align-items-center" style="width: 90%; margin-left: 5%; margin-right: 5%;">
+                <nav class="navbar fixed-top" style="background-color: #003EBD; color: white;">
+                    <div class="container-fluid">
+                        <img
+                            alt="pastedImage"
+                            src="./img/ico/CyberSec.png"
+                            style="width: 10rem;"
+                        />
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                            <img src="./img/ico/Menu.png" style="width: 3rem; border: none;">
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: #141A22; color: #ffffff;">
+                            <div class="offcanvas-header">
+                                <h3 class="offcanvas-title" id="offcanvasNavbarLabel">NASA CyberSecurity</h3>
+                                <button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close">
+                                    <img src="./img/ico/Close.png" style="width: 3rem; border: none;">
+                                </button>
+                            </div>
+                            <div class="offcanvas-body" style="color: #ffffff;">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#"><h5 style="color: #ffffff;">Home</h5></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./deepdive.html"><h5 style="color: #ffffff;">Deep Dive</h5></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./team.html"><h5 style="color: #ffffff;">Meet The Team</h5></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./FinalUI.html"><h5 style="color: #ffffff;">Final Design</h5></a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="offcanvas-body" style="color: #ffffff;">
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <li class="nav-item">
-                                  <a class="nav-link active" aria-current="page" href="#"><h5 style="color: #ffffff;">Home</h5></a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="./deepdive.html"><h5 style="color: #ffffff;">Deep Dive</h5></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./team.html"><h5 style="color: #ffffff;">Meet The Team</h5></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./FinalUI.html"><h5 style="color: #ffffff;">Final Design</h5></a>
-                                </li>
-                            </ul>
+                    </div>
+                </nav>
+            </div>
+            <div style="margin-top: 8rem;"></div>
+        </div>
+
+        <div class="content">
+            <div class="container-fluid d-flex flex-column justify-content-center align-items-center" style="color: #ffffff; text-align: center;">
+                <div style="margin-bottom: 3rem; margin-top: 6rem;">
+                    <h1>Secure Your Files With NASA Cyber Security</h1>
+                </div>
+
+                <div style="margin-bottom: 3rem;">
+                    <p style="margin-bottom: 0;">Features</p>
+                    <hr style="border-top: 2px solid #ffffff; width: 100%; margin-top: 2px;"/>
+                    <h3>Advanced Features for NASA Hunch Security Design</h3>
+                </div>
+
+                <div class="text-start" style="width: 90%; margin-bottom: 5rem;">
+                    <div>
+                        <div class="d-flex flex-row align-items-center justify-content-start" style="background-color: #2F3D50; margin-bottom: 1rem; margin-top: 1rem; width: 100%; height: 7rem; display: inline-block;">
+                            <img src="img/ico/Features.png" height="70%" />
+                            <div class="d-flex flex-column align-items-start justify-content-center">
+                                <h5>Secure File Sharing</h5>
+                                <p>Share files securely within the NASA system.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row align-items-center justify-content-start" style="background-color: #2F3D50; margin-bottom: 1rem; margin-top: 1rem; width: 100%; height: 7rem; display: inline-block;">
+                            <img src="img/ico/Features.png" height="70%" />
+                            <div class="d-flex flex-column align-items-start justify-content-center">
+                                <h5>Encrypted Data Transfer</h5>
+                                <p>Ensure the safety of data with encrypted file transfers.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row align-items-center justify-content-start" style="background-color: #2F3D50; margin-bottom: 1rem; margin-top: 1rem; width: 100%; height: 7rem; display: inline-block;">
+                            <img src="img/ico/Features.png" height="70%" />
+                            <div class="d-flex flex-column align-items-start justify-content-center">
+                                <h5>Real-Time Monitoring</h5>
+                                <p>Monitor file sharing activities in real-time for enhanced security.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row align-items-center justify-content-start" style="background-color: #2F3D50; margin-bottom: 1rem; margin-top: 1rem; width: 100%; height: 7rem; display: inline-block;">
+                            <img src="img/ico/Features.png" height="70%" />
+                            <div class="d-flex flex-column align-items-start justify-content-center">
+                                <h5>User Authentication</h5>
+                                <p>Verify user identity to prevent unauthorized access.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </nav>
-        </div>
-        <div style="margin-top: 8rem;"></div>
-    </div>
 
-      <div class="home-hero1 heroContainer">
-        <animate-on-reveal
-          animation="fadeIn"
-          duration="3s"
-          delay="0s"
-          direction="normal"
-          easing="ease"
-          iteration="1"
-        >
-          <span data-thq-animate-on-reveal="true" class="home-hero-heading">
-            Secure Your Files with NASA Cyber Security
-          </span>
-        </animate-on-reveal>
-      </div>
+                <div style="margin-bottom: 3rem;">
+                    <h3 style="margin-bottom: 1rem;">Share and Protect Your Files With Confidence!</h3>
+                    <a href="./deepdive.html"><button class="btn btn-primary" type="button">Learn More</button></a>
+                </div>
+            </div>
 
-        <div class="home-features">
-          <div class="featuresContainer">
-            <div class="home-features1">
-              <div class="home-container2">
-                <span class="home-text07">
-                  <span>features</span>
-                  <br />
-                </span>
-                <h2 class="home-features-heading">
-                  Advanced Features for NASA Hunch Security Design
-                </h2>
-              </div>
-              <div class="home-container3">
-                <div class="featuresCard">
-                  <svg viewBox="0 0 1024 1024" class="featuresIcon">
-                    <path
-                      d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z"
-                    ></path>
-                  </svg>
-                  <div class="feature-card-container">
-                    <h3 class="feature-card-text">
-                      <span>Secure File Sharing</span>
-                    </h3>
-                    <span class="feature-card-text1">
-                      <span>
-                        Share files securely with other NASA employees
-                      </span>
-                    </span>
-                  </div>
+            <div class="d-flex flex-column justify-content-center align-items-center" style="width: 100%; background-color: #2F3D50; color: #ffffff;">
+                <div class="container" style=" width: 80%; margin-bottom: 3rem; margin-left: 10%; margin-right: 10%;">
+                    <h1 style="margin-top: 3rem; text-align: center; margin-bottom: 3rem;">FAQ</h1>
+                    <h4>What is the purpose of our NASA Hunch Network Security Design?</h4>
+                    <p style="text-indent: 1rem; margin-bottom: 2rem;">
+                        The purpose of the NASA Hunch Network Security Design is to securely share files and data within the NASA network without 
+                        data loss due to environmental factors in space.
+                    </p>
+
+                    <h4>Why use our NASA Hunch Network Security Design?</h4>
+                    <p style="text-indent: 1rem; margin-bottom: 2rem;">
+                        The current issues with data corruption through cosmic/gamma rays: The first step to data integrity is being aware of 
+                        environmental issues BEFORE transferring files. In outer space, the transfer of data can become corrupted by astronomical 
+                        objects that have a changing magnetic field, such as the planets and our Sun.
+                    </p>
+
+                    <h4>How secure is the NASA Hunch Network Security Design?</h4>
+                    <p style="text-indent: 1rem; margin-bottom: 2rem;">
+                        As an extra layer of security, the different devices that carry out the Network Security Design each have different levels 
+                        of clearance and permissions ranging from a Level 1-4. Thus, lower chances of a hack.
+                    </p>
+
+                    <h4>How fast can the NASA Hunch Network Security Design share data?</h4>
+                    <p style="text-indent: 1rem; margin-bottom: 2rem;">
+                        The NASA Hunch Network Security Design prototype can currently send about 500 Megabytes per second (will be even faster).
+                    </p>
                 </div>
-                <div class="featuresCard">
-                  <svg viewBox="0 0 1024 1024" class="featuresIcon">
-                    <path
-                      d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z"
-                    ></path>
-                  </svg>
-                  <div class="feature-card-container">
-                    <h3 class="feature-card-text">
-                      <span>Encrypted Data Transfer</span>
-                    </h3>
-                    <span class="feature-card-text1">
-                      <span>
-                        Ensure the safety of your data with encrypted file
-                        transfers
-                      </span>
-                    </span>
-                  </div>
-                </div>
-                <div class="featuresCard">
-                  <svg viewBox="0 0 1024 1024" class="featuresIcon">
-                    <path
-                      d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z"
-                    ></path>
-                  </svg>
-                  <div class="feature-card-container">
-                    <h3 class="feature-card-text">
-                      <span>Real-time Monitoring</span>
-                    </h3>
-                    <span class="feature-card-text1">
-                      <span>
-                        Monitor file sharing activities in real-time for
-                        enhanced security
-                      </span>
-                    </span>
-                  </div>
-                </div>
-                <div class="featuresCard">
-                  <svg viewBox="0 0 1024 1024" class="featuresIcon">
-                    <path
-                      d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z"
-                    ></path>
-                  </svg>
-                  <div class="feature-card-container">
-                    <h3 class="feature-card-text">
-                      <span>User Authentication</span>
-                    </h3>
-                    <span class="feature-card-text1">
-                      <span>
-                        Verify user identity to prevent unauthorized access
-                      </span>
-                    </span>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-        <div class="home-banner">
-          <div class="home-banner1 bannerContainer">
-            <animate-on-reveal
-              animation="fadeIn"
-              duration="300ms"
-              delay="3s"
-              direction="normal"
-              easing="ease"
-              iteration="1"
-            >
-              <h1 data-thq-animate-on-reveal="true" class="home-banner-heading">
-                Share and Protect Your Files with Confidence
-              </h1>
-            </animate-on-reveal>
-            <animate-on-reveal
-              animation="fadeIn"
-              duration="3s"
-              delay="0s"
-              direction="normal"
-              easing="ease"
-              iteration="1"
-            >
-              <button
-                type="button"
-                data-thq-animate-on-reveal="true"
-                class="home-banner-button buttonFilled"
-              >
-                Learn More
-              </button>
-            </animate-on-reveal>
-          </div>
-        </div>
-        <div class="home-faq">
-          <div class="faqContainer">
-            <div class="home-faq1">
-              <animate-on-reveal
-                animation="fadeIn"
-                duration="3s"
-                delay="0s"
-                direction="normal"
-                easing="ease"
-                iteration="1"
-              >
-                <div data-thq-animate-on-reveal="true" class="home-container4">
-                  <span class="home-text10">
-                    <span>FAQ</span>
-                    <br />
-                  </span>
-                  <h2 class="home-text13">Common questions</h2>
-                  <span class="home-text14">
-                    <span>
-                      Here are some of the most common questions that we get.
-                    </span>
-                    <br />
-                  </span>
-                </div>
-              </animate-on-reveal>
-              <animate-on-reveal
-                animation="fadeIn"
-                duration="3s"
-                delay="0s"
-                direction="normal"
-                easing="ease"
-                iteration="1"
-              >
-                <div data-thq-animate-on-reveal="true" class="home-container5">
-                  <div class="question1-container">
-                    <span class="question1-text">
-                      <span>
-                        What is the purpose of the NASA Hunch Network Security
-                        Design?
-                      </span>
-                    </span>
-                    <span class="question1-text1">
-                      <span>
-                        The purpose of the NASA Hunch Network Security Design is
-                        to securely share files and data within the NASA network
-                        without data loss due to environmental factors in Space.
-                      </span>
-                    </span>
-                  </div>
-                  <div class="question1-container">
-                    <span class="question1-text">
-                      <span>
-                        Why use the NASA Hunch Network Security Design?
-                      </span>
-                    </span>
-                    <span class="question1-text1">
-                      <span>
-                        The current issues with data corruption through
-                        cosmic/gamma rays: The first step to data integrity is
-                        being aware of environmental issues BEFORE transferring
-                        files. In outer space, the transfer of data can become
-                        corrupted by astronomical objects that have a changing
-                        magnetic field, such as the planets and our Sun.
-                      </span>
-                    </span>
-                  </div>
-                  <div class="question1-container">
-                    <span class="question1-text">
-                      <span>
-                        How secure is the NASA Hunch Network Security Design
-                      </span>
-                    </span>
-                    <span class="question1-text1">
-                      <span>
-                        As an extra layer of security, the different devices
-                        that carry out the Network Security Design each have
-                        different levels of clearance and permissions ranging
-                        from a Level 1-4. Thus, lower chances of a hack.
-                      </span>
-                    </span>
-                  </div>
-                  <div class="question1-container">
-                    <span class="question1-text">
-                      <span>
-                        How fast can the NASA Hunch Network Security Design
-                        share data?
-                      </span>
-                    </span>
-                    <span class="question1-text1">
-                      <span>
-                        The NASA Hunch Network Security Design prototype can
-                        currently send about 500 Megabytes per second (will be
-                        even faster).
-                      </span>
-                    </span>
-                  </div>
-                </div>
-              </animate-on-reveal>
+
+        <footer class="footer" style="background-color: #040A12; color: #ffffff; width: 100%; position: absolute;">
+            <div class="container d-flex flex-column justify-content-center align-items-center" style="margin-top: .5rem; margin-bottom: .5rem;">
+                <span class="footer-text">NASA Hunch Cybersecurity 2023-2024</span>
             </div>
-          </div>
-        </div>
-        <div class="home-footer"></div>
-      </div>
-    </div>
-    <script
-      data-section-id="navbar"
-      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
-    ></script>
-    <script
-      defer=""
-      src="https://unpkg.com/@teleporthq/react-components/dist/animate-on-reveal.umd.js"
-    ></script>
-    
-  </body>
+        </footer>
+    </body>
 </html>
