@@ -9,6 +9,40 @@
         <style>
             body {
                 background-color: #141A22;
+                max-width: 100vw;
+                width: 100vw;
+                position: absolute;
+                overflow-x: hidden;
+            }
+
+            .buttonTitle {
+                color: #CCCCCC;
+                background-color: #2F3D50;
+                border: none;
+                border-radius: 0;
+                animation: fadeInAnimation ease 1.5s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+            }
+
+            .buttonTitle:hover {
+                color: #CCCCCC;
+                background-color: #2F3D50;
+                border: none;
+                transition: .2s;
+            }
+
+            .collapse {
+                background-color: #3F4D60;
+            }
+
+            @keyframes fadeInAnimation {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
             }
         </style>
     </head>
@@ -18,27 +52,335 @@
 
         <link rel="stylesheet" href="./css/style.css" />
         <link href="./css/index.css" rel="stylesheet" />
-        
-        <div style="background-color: #003EBD; width: 100%;">
-            <header data-role="Header" class="home-header1">
-            <header data-thq="thq-navbar" class="home-navbar-interactive">
-                <div data-thq="thq-navbar-nav" class="home-desktop-menu">
-                <img
-                    alt="pastedImage"
-                    src="img/ico/CyberSec.png"
-                    class="home-pasted-image"
-                />
-                <nav class="home-links">
-                    <a href="index.html" class="home-navlink">Home</a>
-                    <a href="deepdive.html" class="home-navlink">Deep Dive</a>
-                    <a href="progress.html" class="home-navlink">Progress</a>
-                    <a href="team.html" class="home-navlink1">Meet the Team</a>
-                    <a href="FinalUI.html" class="home-navlink1">Final Design</a>
+
+        <div style="background-color: #003EBD; width: 100vw; margin-bottom: 4rem;">
+            <div class="d-flex flex-row justify-content-between align-items-center" style="width: 90%; margin-left: 5%; margin-right: 5%;">
+                <nav class="navbar fixed-top" style="background-color: #003EBD; color: white;">
+                    <div class="container-fluid">
+                        <img
+                            alt="pastedImage"
+                            src="./img/ico/CyberSec.png"
+                            style="width: 10rem;"
+                        />
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                            <img src="./img/ico/Menu.png" style="width: 3rem; border: none;">
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: #141A22; color: #ffffff;">
+                            <div class="offcanvas-header">
+                                <h3 class="offcanvas-title" id="offcanvasNavbarLabel">NASA CyberSecurity</h3>
+                                <button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close">
+                                    <img src="./img/ico/Close.png" style="width: 3rem; border: none;">
+                                </button>
+                            </div>
+                            <div class="offcanvas-body" style="color: #ffffff;">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./index.html"><h5 style="color: #ffffff;">Home</h5></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#"><h5 style="color: #ffffff;">Deep Dive</h5></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./team.html"><h5 style="color: #ffffff;">Meet The Team</h5></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./FinalUI.html"><h5 style="color: #ffffff;">Final Design</h5></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </nav>
-                </div>
-            </header>
-            </header>
+            </div>
+            <div style="margin-top: 8rem;"></div>
         </div>
 
+        <div class="d-flex flex-column justify-content-evenly align-items-center" style="width: 80%; margin-left: 10%; margin-right: 10%;">
+            <div style="margin-top: 2rem; margin-bottom: 3rem; text-indent: 2rem; width: 100%;">
+                <button class="btn buttonTitle d-flex flex-row justify-content-between align-items-center" style="width: 100%;" onclick="changeIcon(1)" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+                    <div style="text-align: left; width: 75%;">
+                        <h3 style="margin-top: 0.5rem;">Data Corruption</h3>
+                        <p>
+                            Corruption of data may result from many factors, especially without the protection of the atmosphere.
+                            This can result in inaccurate transfer of information.
+                        </p>
+                    </div>
+                    <img src="./img/ico/More.png" style="width: 2rem; display: block;" id="iconMore1">
+                    <img src="./img/ico/Less.png" style="width: 2rem; display: none;" id="iconLess1">
+                </button>
+                <div class="collapse" id="collapseExample1">
+                    <div class="card card-body d-flex flex-col justify-content-center align-items-center" style="background-color: #3F4D60; color: #ffffff;">
+                        <p>
+                            The first step to data integrity (or how we are going to transfer data) is being aware of environmental 
+                            issues BEFORE transferring files. In outer space, the transfer of data can become corrupted by 
+                            astronomical objects that have a changing magnetic field, such as the planets and our Sun.
+                        </p>
+                        <p>
+                            Data pictured below show emissions from a variety of sources including radio bursts from the Sun, the 
+                            Earth, and even from Jupiter's ionosphere whose wavelengths measure about fifteen meters in length. The 
+                            far right of this graph shows radio bursts from the Sun caused by electrons that have been ejected into 
+                            space during solar flares moving at 20% of the speed of light.
+                        </p>    
+                        <img src="./img/assets/RadioEmissionsGraph.png" width="50%" style="margin-top: 1rem; margin-bottom: 1rem; vertical-align: middle;"/>
+                        <p style="margin-top: 1rem;">
+                            ​Transferring data is oftentimes ill-advised in the presence of extreme radio waves such as these, 
+                            and resulting files are often riddled with “noise,” or data that’s corrupted, distorted, or otherwise meaningless.
+                        </p>
+                        <h4 align="center" style="margin-top: 2rem;">Solution: Cosmic-ray Observatory</h4>
+                        <p>
+                            A cosmic-ray observatory is a scientific installation built to detect high-energy-particles coming from space 
+                            called cosmic rays. This typically includes photons (high-energy light), electrons, protons, and some heavier 
+                            nuclei, as well as antimatter particles. About 90% of cosmic rays are protons, 9% are alpha particles, and the 
+                            remaining ~1% are other particles. For our purposes, it will be able to detect the disrupting radio waves. When 
+                            we detect a spike in the waves, it is unsafe to transfer data (we will not), and vice versa (no waves = safe transfer).
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 2rem; margin-bottom: 3rem; text-indent: 2rem; width: 100%;">
+                <button class="btn buttonTitle d-flex flex-row justify-content-between align-items-center" style="width: 100%;" onclick="changeIcon(2)" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                    <div style="text-align: left; width: 75%;">
+                        <h3 style="margin-top: 0.5rem;">Data Security</h3>
+                        <p>
+                            The protection of data is essential in ensuring that the information remains confidential.
+                        </p>
+                    </div>
+                    <img src="./img/ico/More.png" style="width: 2rem; display: block;" id="iconMore2">
+                    <img src="./img/ico/Less.png" style="width: 2rem; display: none;" id="iconLess2">
+                </button>
+                <div class="collapse" id="collapseExample2">
+                    <div class="card card-body d-flex flex-col justify-content-center align-items-center" style="background-color: #3F4D60; color: #ffffff;">
+                        <p>
+                            Quantum Key Distribution (QKD) uses principles of quantum mechanics to enable two parties to establish a shared 
+                            secret key for secure communication, which can then be used to verify file integrity through transfers. The key 
+                            aspects of QKD are typically based on the principles of quantum superposition and quantum entanglement.
+                        </p>
+                        <p>
+                            Quantum Superposition: In quantum mechanics, particles such as photons can exist in multiple states simultaneously, 
+                            a phenomenon known as superposition. QKD often uses a quantum property called polarization. Photons can be polarized 
+                            in different directions, representing the 0s and 1s of a binary code.
+                        </p>
+                        <p>
+                            Quantum Entanglement: Entanglement is a quantum phenomenon where two or more particles become correlated in such a way 
+                            that the state of one particle is directly related to the state of another, regardless of the distance between them. 
+                            QKD systems leverage entangled particles to create a shared secret key.
+                        </p>
+                        <p>
+                            The process for using these quantum principles to verify file integrity through transfers is as such:
+                        </p>
+                        <ol style="text-indent: 0;">
+                            <li>
+                                <p>
+                                    QKD typically involves the exchange of quantum particles (usually photons) between the two communicating parties, 
+                                    often referred to as Alice and Bob. Alice sends a stream of entangled photons to Bob. Each photon represents a bit 
+                                    in the key. Due to the principles of quantum mechanics, any attempt to eavesdrop on the communication (by intercepting 
+                                    and measuring the photons) would disturb their quantum states, and this disturbance can be detected.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    After receiving the entangled photons, Bob measures their polarization states using a chosen basis. Alice and Bob publicly 
+                                    announce the basis they used for each bit without revealing the actual measurement results.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Alice and Bob compare a subset of their bits where the measurement basis matches. Any discrepancy between their measurements 
+                                    indicates potential eavesdropping or errors in the key generation process.
+                                </p>
+                            </li>
+                        </ol>
+                        <p>
+                            Pairing with a future key based post-quantum encryption scheme should create a resilient network for years to come. Note QKD is in 
+                            its infancy, but research right now is pushing the bounds of what is possible.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 2rem; margin-bottom: 3rem; text-indent: 2rem; width: 100%;">
+                <button class="btn buttonTitle d-flex flex-row justify-content-between align-items-center" style="width: 100%;" onclick="changeIcon(3)" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+                    <div style="text-align: left; width: 75%;">
+                        <h3 style="margin-top: 0.5rem;">Data Redundancy</h3>
+                        <p>
+                            If one of the components were to fail, the results would be catastrophic. How do we limit these effects?
+                        </p>
+                    </div>
+                    <img src="./img/ico/More.png" style="width: 2rem; display: block;" id="iconMore3">
+                    <img src="./img/ico/Less.png" style="width: 2rem; display: none;" id="iconLess3">
+                </button>
+                <div class="collapse" id="collapseExample3">
+                    <div class="card card-body d-flex flex-col justify-content-center align-items-center" style="background-color: #3F4D60; color: #ffffff;">
+                        <p>
+                            Ensuring data integrity during the transmission of files in space is paramount due to the harsh and unpredictable conditions of 
+                            the space environment. Space missions rely heavily on the transmission of data between spacecraft, ground stations, and other 
+                            devices. Any corruption or loss of data during transmission can have serious consequences, jeopardizing the success of the mission 
+                            or compromising critical information. To mitigate these risks, advanced error detection and correction techniques are employed. These 
+                            techniques include checksums, redundancy, and error-correcting codes, which allow for the detection and, in some cases, correction of 
+                            errors that may occur during data transmission. Additionally, protocols such as the Consultative Committee for Space Data Systems (CCSDS) 
+                            provide standards and guidelines specifically tailored for space data communications, ensuring interoperability and reliability across 
+                            different space missions and agencies.
+                        </p>
+                        <p>
+                            Moreover, space agencies employ sophisticated communication systems and protocols designed to cope with the challenges of space 
+                            communication, such as signal degradation, cosmic radiation, and long distances. For instance, deep space missions often utilize 
+                            powerful antennas and modulation techniques to maintain communication over vast distances. Furthermore, protocols like the 
+                            Delay-Tolerant Networking (DTN) protocol are specifically designed for space communications, allowing for efficient data transmission 
+                            even in scenarios where traditional networking protocols fail, such as when there are long delays or disruptions in connectivity. 
+                            Overall, ensuring data integrity in transferring files in space requires a combination of robust error detection and correction techniques, s
+                            pecialized communication protocols, and advanced hardware and software systems tailored to the unique challenges of the space environment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 2rem; margin-bottom: 3rem; text-indent: 2rem; width: 100%;">
+                <button class="btn buttonTitle d-flex flex-row justify-content-between align-items-center" style="width: 100%;" onclick="changeIcon(5)" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample">
+                    <div style="text-align: left; width: 75%;">
+                        <h3 style="margin-top: 0.5rem;">Human Threats</h3>
+                        <p>
+                            Not only will the environment try to tamper with information, humans will too.
+                        </p>
+                    </div>
+                    <img src="./img/ico/More.png" style="width: 2rem; display: block;" id="iconMore5">
+                    <img src="./img/ico/Less.png" style="width: 2rem; display: none;" id="iconLess5">
+                </button>
+                <div class="collapse" id="collapseExample5">
+                    <div class="card card-body d-flex flex-col justify-content-center align-items-center" style="background-color: #3F4D60; color: #ffffff;">
+                        <p>
+                            The threat of hackers sabotaging space satellites and potential moon bases is a concerning possibility as humanity 
+                            ventures further into space exploration. Space infrastructure, including satellites and future moon bases, are critical 
+                            for telecommunications, navigation, Earth observation, and potentially sustaining human life beyond Earth. A successful 
+                            cyberattack on these assets could have catastrophic consequences, disrupting communication networks, compromising data 
+                            integrity, and even endangering lives. Hackers could potentially exploit vulnerabilities in the software, communication 
+                            protocols, or control systems of these space assets to gain unauthorized access, manipulate operations, or cause physical 
+                            damage. Such attacks could be motivated by various factors, including espionage, terrorism, or geopolitical tensions, 
+                            highlighting the importance of robust cybersecurity measures in space systems.
+                        </p>
+                        <p>
+                            Furthermore, the emergence of quantum computers poses a new and unprecedented challenge to space cybersecurity. 
+                            Quantum computers have the potential to break many of the cryptographic algorithms currently used to secure data 
+                            transmission and communication networks, rendering traditional encryption methods obsolete. This could significantly 
+                            amplify the threat posed by hackers, allowing them to decrypt sensitive information, intercept communication channels, 
+                            and compromise the integrity of space missions with greater ease. As quantum computing technology advances, space agencies 
+                            and satellite operators must proactively develop quantum-resistant encryption algorithms and protocols to safeguard space 
+                            assets against this emerging threat. 
+                        </p>
+                        <p>
+                            These are just the most apparent threats faced by a space program. There is always human error 
+                            that will leave you unprotected. This may include laps in security practices that come with comfort and patterns. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 2rem; margin-bottom: 3rem; text-indent: 2rem; width: 100%; width: 100%;">
+                <button class="btn buttonTitle d-flex flex-row justify-content-between align-items-center" style="width: 100%;" onclick="changeIcon(4)" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
+                    <div style="text-align: left; width: 75%;">
+                        <h3 style="margin-top: 0.5rem;">Security Best Practices</h3>
+                        <p>
+                            The information being exchanged is confidential. These are the precautions in place to prevent
+                            information from being stolen.
+                        </p>
+                    </div>
+                    <img src="./img/ico/More.png" style="width: 2rem; display: block;" id="iconMore4">
+                    <img src="./img/ico/Less.png" style="width: 2rem; display: none;" id="iconLess4">
+                </button>
+                <div class="collapse" id="collapseExample4" style="text-indent: 0;">
+                    <div class="card card-body d-flex flex-col justify-content-center align-items-center" style="background-color: #3F4D60; color: #ffffff;">
+                        <table class="table table-borderd" style="border: 5px;">
+                            <thead>
+                                <th scope="col">Data Level</th>
+                                <th scope="col">Description</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Level 0</th>
+                                    <td>
+                                        <p>
+                                            Reconstructed, unprocessed instrument and payload data at full resolution, with any and all communications artifacts 
+                                            (e.g., synchronization frames, communications headers, duplicate data) removed. (In most cases, NASA's EOS Data and Operations 
+                                            System [EDOS] provides these data to the DAACs as production data sets for processing by the Science Data Processing Segment 
+                                            [SDPS] or by one of the SIPS to produce higher-level products.) Completely unprocessed instrument, no security with only payload data.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Level 1</th>
+                                    <td>
+                                        <p>
+                                            Level 1 data are reconstructed, unprocessed instrument data at full resolution, time-referenced, and annotated with 
+                                            ancillary information, including radiometric and geometric calibration coefficients and georeferencing parameters 
+                                            (e.g., platform ephemeris) computed and appended but not applied to L0 data. L1 data includes new variables to describe 
+                                            the spectra. These variables allow the user to identify which L1 channels have been copied directly from other L1 channels 
+                                            and which have been synthesized from them and why. Basically the raw data with no filters, available for encryption/decryption, 
+                                            is vulnerable.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Level 2</th>
+                                    <td>
+                                        <p>
+                                            L2 data contains information derived from the geolocated sensor data, such as ground elevation, highest and 
+                                            lowest surface return elevations, energy quantile heights (“relative height” metrics), and other waveform-derived metrics 
+                                            describing the intercepted surface. The permission layer where information about the raw data is processed, and communicated 
+                                            within the level.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Level 3</th>
+                                    <td>
+                                        <p>
+                                            Variables mapped on uniform space-time grid scales, usually with some completeness and consistency. L3 data are 
+                                            generally periodic summaries (weekly, ten-day, monthly) of L2 products. Encrypted data, sends key.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Level 4</th>
+                                    <td>
+                                        <p>
+                                            Model output or results from analyses of lower-level data (e.g., variables derived from multiple measurements). 
+                                            Decrypted data, receives key.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div style="text-align: left;">
+                            <p>The levels of permissions of each device in the top right corner should be (subject to change/discussion):</p>
+                            <ul>
+                                <li><p>Radar Dish - Level 0, 1, and 2</p></li>
+                                <li><p>Individual Computers - Level 0 and 1</p></li>
+                                <li><p>Base Switch - Level 0, 1, and 2</p></li>
+                                <li><p>Base Router - Level 3 and 4</p></li>
+                                <li><p>Radio Tower - Level 3 and 4</p></li>
+                                <li><p>Base Server - Level 3 and 4</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script>
+            function changeIcon(identify) {
+                var elementsMore = document.getElementById("iconMore" + String(identify))
+                var elementsLess = document.getElementById("iconLess" + String(identify))
+                if (elementsMore.style.display === "block") {
+                    elementsMore.style.display = "none";
+                } else {
+                    elementsMore.style.display = "block";
+                }
+                if (elementsLess.style.display === "block") {
+                    elementsLess.style.display = "none";
+                } else {
+                    elementsLess.style.display = "block";
+                }
+            };
+        </script>
     </body>
 </html>
