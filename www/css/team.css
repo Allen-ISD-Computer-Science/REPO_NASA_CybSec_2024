@@ -1,5 +1,7 @@
 body {
     background-color: #141A22;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 .cardHolder {
@@ -12,19 +14,28 @@ body {
 
 @keyframes fadeInX {
     0% {
-        transform: translateX(100em);
+        transform: translateX(100%);
     }
     30% {
-        transform: translateX(0em);
+        transform: translateX(0%);
     }
 }
 
 @keyframes fadeInY {
     0% {
-        transform: translateX(-100em);
+        transform: translateX(-100%);
     }
     30% {
-        transform: translateX(0em);
+        transform: translateX(0%);
+    }
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
     }
 }
 
@@ -40,12 +51,12 @@ body {
 
 
 .card:nth-of-type(odd) {
-    animation: fadeInX ease 1s;
+    animation: fadeInAnimation ease 1s;
     animation-timeline: view();
 }
 
 .card:nth-of-type(even) {
-    animation: fadeInY ease 1s;
+    animation: fadeInAnimation ease 1s;
     animation-timeline: view();
 }
 
