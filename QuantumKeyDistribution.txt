@@ -1,0 +1,14 @@
+Quantum Key Distribution (QKD) uses principles of quantum mechanics to enable two parties to establish a shared secret key for secure communication, which can then be used to verify file integrity through transfers. The key aspects of QKD are typically based on the principles of quantum superposition and quantum entanglement.
+
+Quantum Superposition: In quantum mechanics, particles such as photons can exist in multiple states simultaneously, a phenomenon known as superposition. QKD often uses a quantum property called polarization. Photons can be polarized in different directions, representing the 0s and 1s of a binary code.
+
+Quantum Entanglement: Entanglement is a quantum phenomenon where two or more particles become correlated in such a way that the state of one particle is directly related to the state of another, regardless of the distance between them. QKD systems leverage entangled particles to create a shared secret key.
+
+The process for using these quantum principles to verify file integrity through transfers is as such:
+
+QKD typically involves the exchange of quantum particles (usually photons) between the two communicating parties, often referred to as Alice and Bob. Alice sends a stream of entangled photons to Bob. Each photon represents a bit in the key. Due to the principles of quantum mechanics, any attempt to eavesdrop on the communication (by intercepting and measuring the photons) would disturb their quantum states, and this disturbance can be detected.
+After receiving the entangled photons, Bob measures their polarization states using a chosen basis. Alice and Bob publicly announce the basis they used for each bit without revealing the actual measurement results.
+Alice and Bob compare a subset of their bits where the measurement basis matches. Any discrepancy between their measurements indicates potential eavesdropping or errors in the key generation process.
+
+Pairing with a future key based post-quantum encryption scheme should create a resilient network for years to come. Note QKD is in its infancy, but research right now is pushing the bounds of what is possible.
+https://www.nature.com/articles/s41586-020-03093-8
