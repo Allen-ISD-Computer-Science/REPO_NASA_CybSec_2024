@@ -1,0 +1,87 @@
+body {
+    background-color: #141A22;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.cardHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+@keyframes fadeInX {
+    0% {
+        transform: translateX(100%);
+    }
+    30% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes fadeInY {
+    0% {
+        transform: translateX(-100%);
+    }
+    30% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+}
+
+.card{
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.25rem;
+    background-color: aliceblue;
+    box-shadow: 0px 0px 15px 5px rgba(173, 216, 230, 0.349);
+}
+
+
+.card:nth-of-type(odd) {
+    animation: fadeInAnimation ease 1s;
+    animation-timeline: view();
+}
+
+.card:nth-of-type(even) {
+    animation: fadeInAnimation ease 1s;
+    animation-timeline: view();
+}
+
+.card:not(:first-of-type){
+    margin-top: 1rem;
+}
+
+.card:last-of-type{
+    margin-bottom: 1rem;
+}
+
+.headshot {
+    margin-top: 1rem;
+    width: 75%;
+    border-radius: 50em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.name {
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.title {
+    font-weight: 375;
+    color: gray;
+    margin-bottom: 1rem;
+}
