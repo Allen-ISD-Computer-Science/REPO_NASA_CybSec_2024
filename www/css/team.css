@@ -12,32 +12,6 @@ body {
 }
 
 
-@keyframes fadeInX {
-    0% {
-        transform: translateX(100%);
-    }
-    30% {
-        transform: translateX(0%);
-    }
-}
-
-@keyframes fadeInY {
-    0% {
-        transform: translateX(-100%);
-    }
-    30% {
-        transform: translateX(0%);
-    }
-}
-
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    30% {
-        opacity: 1;
-    }
-}
 
 .card{
     width: 70vw;
@@ -50,23 +24,6 @@ body {
 }
 
 
-.card:nth-of-type(odd) {
-    animation: fadeInAnimation ease 1s;
-    animation-timeline: view();
-}
-
-.card:nth-of-type(even) {
-    animation: fadeInAnimation ease 1s;
-    animation-timeline: view();
-}
-
-.card:not(:first-of-type){
-    margin-top: 1rem;
-}
-
-.card:last-of-type{
-    margin-bottom: 1rem;
-}
 
 .headshot {
     margin-top: 1rem;
