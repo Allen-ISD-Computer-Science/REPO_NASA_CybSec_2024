@@ -61,6 +61,8 @@ while True:
             # Get the center of the tag
             center_x = int(detection.center[0])
             center_y = int(detection.center[1])
+            corner_points = detection.corners.astype(int)
+            cv2.polylines(frame, [corner_points], True, (0, 255, 0), 2)
 
             # Calculate steps to move stepper motors
             steps_x = center_x - 320  # Assuming the frame width is 640
@@ -71,7 +73,7 @@ while True:
             move_stepper_motor(STEP_PIN_Y, DIR_PIN_Y, steps_y)
 
     # Display the frame
-    cv2.imshow('Frame', frame)
+     cv2.imshow('AprilTag Detection', frame)
 
     # Break the loop when 'q' key is pressed
     if cv2.waitKey(1) & 0xFF == ord('q'):
