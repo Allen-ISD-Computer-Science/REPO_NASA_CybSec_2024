@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NASA Cybersecurity</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        
+        <link href="./img/ico/shieldIcon.png" rel="icon" type="image/x-icon">
+        <link href="./css/style.css" rel="stylesheet">
+
+        <script defer src="./js/viewOnScroll.js"></script>
+    </head>
+    <body style="width: 100vw; background-color: #141A22;">
+
+        <!-- Navbar Large -->
+        <div class="fixed-top" style="width: 100vw; background-color: #003ebd; height: 5rem;">
+            <div class="d-none d-lg-flex h-100 justify-content-between container mb-5" style="width: 90%;">
+                <div class="w-25 d-flex justify-content-center align-items-center">
+                    <img src="./img/ico/CyberSec.png" class="h-100 ms-2 me-2 mt-1 mb-1">
+                </div>
+                <nav class="nav justify-content-between align-items-center" style="width: 60%;">
+                    <a class="nav-link ms-2 me-2 active" href="./index.html" aria-current="page" style="color: #ffffff;">Home</a>
+                    <a class="nav-link ms-2 me-2" href="./team.html"  style="color: #ffffff;">Meet the Team</a>
+                    <a class="nav-link ms-2 me-2" href="./design.html"  style="color: #ffffff;">Final Design</a>
+                    <a class="nav-link ms-2 me-2" href="./dive.html"  style="color: #ffffff;">Deep Dive</a>
+                </nav>
+            </div>
+        </div>
+
+
+        <!-- Navbar Small -->
+        <nav class="d-block d-lg-none navbar navbar-light fixed-top mb-5" style="background-color: #003ebd; height: 5rem;">
+            <div class="container-fluid h-100">
+                <img src="./img/ico/CyberSec.png" class="h-100 ms-2 me-2 mt-1 mb-1">
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar"
+                >
+                    <i class="bi bi-list text-light"></i>
+                </button>
+                <div
+                    class="offcanvas offcanvas-end"
+                    data-bs-theme="dark"
+                    tabindex="-1"
+                    id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel"
+                >
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                            NASA Cyber Security
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close text-reset"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active text-light"
+                                    aria-current="page"
+                                    href="./index.html"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="./team.html">Meet the Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="./design.html">Final Design</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="./dive.html">Deep Dive</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div style="height: 7rem; width: 100vw;"></div>
+
+        <!-- Top Header -->
+        <div class="container d-flex flex-column align-items-center justify-content-center text-light mt-2 mb-2 FadeIn">
+            <div class="fs-1 mt-2 mb-2 text-center fw-semibold">A Deep Dive</div>
+            <hr class="border-top border-light border-3" style="width: 100%; height: 10px;" />
+            <div class="fs-3 mt-2 mb-2 text-center">Learn more about how we securely transfer data through space!</div>
+        </div>
+        <div style="height: 5rem; width: 100vw;"></div>
+
+        <div class="container w-75 mb-5">
+            <div class="accordion accordion-flush FadeIn" id="accordionFlushExample" data-bs-theme="dark">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne"
+                            aria-expanded="true"
+                            aria-controls="flush-collapseOne"
+                        >
+                            Data Corruption
+                        </button>
+                    </h2>
+                    <div
+                        id="flush-collapseOne"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample"
+                    >
+                        <div class="accordion-body" style="text-indent: 10px">
+                            <div class="mt-2 mb-2">Corruption of data may result from many factors, especially without the protection of the atmosphere. This can result in inaccurate transfer of information.</div>
+                            <br />
+                            <div class="mt-2 mb-2">The first step to data integrity (or how we are going to transfer data) is being aware of environmental issues BEFORE transferring files. In outer space, the transfer of data can become corrupted by astronomical objects that have a changing magnetic field, such as the planets and our Sun.</div>
+                            <br />
+                            <div class="mt-2 mb-2">Data pictured below show emissions from a variety of sources including radio bursts from the Sun, the Earth, and even from Jupiter's ionosphere whose wavelengths measure about fifteen meters in length. The far right of this graph shows radio bursts from the Sun caused by electrons that have been ejected into space during solar flares moving at 20% of the speed of light.</div>
+                            <br />
+                            <div class="mt-2 mb-2">​Transferring data is oftentimes ill-advised in the presence of extreme radio waves such as these, and resulting files are often riddled with “noise,” or data that’s corrupted, distorted, or otherwise meaningless.</div>
+                            <br />
+                            <div class="mt-2 mb-2" style="text-indent: 0px;">Solution: Cosmic-ray Observatory</div>
+                            <div class="mt-2 mb-2">A cosmic-ray observatory is a scientific installation built to detect high-energy-particles coming from space called cosmic rays. This typically includes photons (high-energy light), electrons, protons, and some heavier nuclei, as well as antimatter particles. About 90% of cosmic rays are protons, 9% are alpha particles, and the remaining ~1% are other particles. For our purposes, it will be able to detect the disrupting radio waves. When we detect a spike in the waves, it is unsafe to transfer data (we will not), and vice versa (no waves = safe transfer).</div>
+                            <br />
+                            <div class="mt-2 mb-2" style="text-indent: 0px;">Sources:</div>
+                            <ul>
+                                <li>
+                                    <a href="https://science.nasa.gov/ems/05_radiowaves/">https://science.nasa.gov/ems/05_radiowaves/</a>
+                                </li>
+                                <li>
+                                    <a href="https://en.wikipedia.org/wiki/Cosmic-ray_observatory">https://en.wikipedia.org/wiki/Cosmic-ray_observatory</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo"
+                            aria-expanded="true"
+                            aria-controls="flush-collapseTwo"
+                        >
+                            Data Redundancy
+                        </button>
+                    </h2>
+                    <div
+                        id="flush-collapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample"
+                    >
+                        <div class="accordion-body" style="text-indent: 10px">
+                            <div>
+                                <div>If one of these components were to fail, the results would be catastrophic. How do we limit these effects?</div>
+                                <br />
+                                <div>Ensuring data integrity during the transmission of files in space is paramount due to the harsh and unpredictable conditions of the space environment. Space missions rely heavily on the transmission of data between spacecraft, ground stations, and other devices. Any corruption or loss of data during transmission can have serious consequences, jeopardizing the success of the mission or compromising critical information. To mitigate these risks, advanced error detection and correction techniques are employed. These techniques include checksums, redundancy, and error-correcting codes, which allow for the detection and, in some cases, correction of errors that may occur during data transmission. Additionally, protocols such as the Consultative Committee for Space Data Systems (CCSDS) provide standards and guidelines specifically tailored for space data communications, ensuring interoperability and reliability across different space missions and agencies.</div>
+                                <br />
+                                <div>Moreover, space agencies employ sophisticated communication systems and protocols designed to cope with the challenges of space communication, such as signal degradation, cosmic radiation, and long distances. For instance, deep space missions often utilize powerful antennas and modulation techniques to maintain communication over vast distances. Furthermore, protocols like the Delay-Tolerant Networking (DTN) protocol are specifically designed for space communications, allowing for efficient data transmission even in scenarios where traditional networking protocols fail, such as when there are long delays or disruptions in connectivity. Overall, ensuring data integrity in transferring files in space requires a combination of robust error detection and correction techniques, specialized communication protocols, and advanced hardware and software systems tailored to the unique challenges of the space environment.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree"
+                            aria-expanded="true"
+                            aria-controls="flush-collapseThree"
+                        >
+                            Human Threats
+                        </button>
+                    </h2>
+                    <div
+                        id="flush-collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample"
+                    >
+                        <div class="accordion-body" style="text-indent: 10px">
+                            <div>Not only will the environment tamper with information, humans will too!</div>
+                            <br />
+                            <div>The threat of hackers sabotaging space satellites and potential moon bases is a concerning possibility as humanity ventures further into space exploration. Space infrastructure, including satellites and future moon bases, are critical for telecommunications, navigation, Earth observation, and potentially sustaining human life beyond Earth. A successful cyberattack on these assets could have catastrophic consequences, disrupting communication networks, compromising data integrity, and even endangering lives. Hackers could potentially exploit vulnerabilities in the software, communication protocols, or control systems of these space assets to gain unauthorized access, manipulate operations, or cause physical damage. Such attacks could be motivated by various factors, including espionage, terrorism, or geopolitical tensions, highlighting the importance of robust cybersecurity measures in space systems.</div>
+                            <br />
+                            <div>Furthermore, the emergence of quantum computers poses a new and unprecedented challenge to space cybersecurity. Quantum computers have the potential to break many of the cryptographic algorithms currently used to secure data transmission and communication networks, rendering traditional encryption methods obsolete. This could significantly amplify the threat posed by hackers, allowing them to decrypt sensitive information, intercept communication channels, and compromise the integrity of space missions with greater ease. As quantum computing technology advances, space agencies and satellite operators must proactively develop quantum-resistant encryption algorithms and protocols to safeguard space assets against this emerging threat. </div>
+                            <br />
+                            <div>These are just the most apparent threats faced by a space program. There is always human error that will leave you unprotected. This may include laps in security practices that come with comfort and patterns.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour"
+                            aria-expanded="true"
+                            aria-controls="flush-collapseFour"
+                        >
+                            Security Best Practices
+                        </button>
+                    </h2>
+                    <div
+                        id="flush-collapseFour"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample"
+                    >
+                        <div class="accordion-body" style="text-indent: 10px">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Data Level</th>
+                                        <th scope="col">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-group-divider">
+                                    <tr>
+                                        <th scope="row">Level 0</th>
+                                        <td>Reconstructed, unprocessed instrument and payload data at full resolution, with any and all communications artifacts (e.g., synchronization frames, communications headers, duplicate data) removed. (In most cases, NASA's EOS Data and Operations System [EDOS] provides these data to the DAACs as production data sets for processing by the Science Data Processing Segment [SDPS] or by one of the SIPS to produce higher-level products.) <div class="fw-semibold">Completely unprocessed instrument, no security with only payload data.</div></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Level 1</th>
+                                        <td>Level 1 data are reconstructed, unprocessed instrument data at full resolution, time-referenced, and annotated with ancillary information, including radiometric and geometric calibration coefficients and georeferencing parameters (e.g., platform ephemeris) computed and appended but not applied to L0 data. L1 data includes new variables to describe the spectra. These variables allow the user to identify which L1 channels have been copied directly from other L1 channels and which have been synthesized from them and why. <div class="fw-semibold">Basically the raw data with no filters, available for encryption/decryption, is vulnerable.</div></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Level 2</th>
+                                        <td>L2 data contains information derived from the geolocated sensor data, such as ground elevation, highest and lowest surface return elevations, energy quantile heights (“relative height” metrics), and other waveform-derived metrics describing the intercepted surface. <div class="fw-semibold">The permission layer where information about the raw data is processed, and communicated within the level.</div></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Level 3</th>
+                                        <td>Variables mapped on uniform space-time grid scales, usually with some completeness and consistency. L3 data are generally periodic summaries (weekly, ten-day, monthly) of L2 products. Encrypted data, sends key.</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Level 4</th>
+                                        <td>Model output or results from analyses of lower-level data (e.g., variables derived from multiple measurements). <div class="fw-semibold">Decrypted data, receives key.</div></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Footer -->
+        <div class="fixed-bottom bg-black text-light fs-6 text-center d-flex align-items-center justify-content-center" style="width: 100vw; height: 2rem;">
+            @ 2023-2024 NASA Hunch Cybersecurity
+        </div>
+
+
+        <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
