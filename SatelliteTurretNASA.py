@@ -24,11 +24,11 @@ while 1:
 	frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
 	fgmask = fgbg.apply(frame)
 	contours, _ = cv2.findContours(fgmask.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-	
-	for contour in contours:
-		if cv2.contourArea(contour) > 100:
-			x,  y, w, h = cv2.boundingRect(contour)
-			cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
+	max_contour = max(contours, key=cv2.contourArea)
+
+	if max_contour is not None:
+		x, y, w, h = cv2.boundingRect(max_contour)
+		cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
 	
 	frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 	image = pygame.surfarray.make_surface(frame)
