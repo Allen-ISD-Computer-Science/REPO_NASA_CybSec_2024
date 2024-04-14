@@ -1,85 +1,49 @@
-#This is the program to run motion detecting turret (Prototype Run and will be tweaked later)
-
-#Multiple Steps are required to run this code with Raspberry Pi
-# 1. Update all Raspberry Pi System Packages
-# 2. Install Python and Pip
-# 3. Install Dependencies (OpenCV, AprilTags, RPi.GPIO)
-# 4. Connect all Hardware and Setup GPIO Pins
-
-
 import cv2
-import apriltag
-import RPi.GPIO as GPIO
-import time
+import pygame
+import numpy as np
+import os
 
-# Initialize the webcam
-cap = cv2.VideoCapture(0)
+os.environ['XDG_RUNTIME_DIR'] = '/run/user/1000'
 
-# Initialize GPIO pins for stepper motor control
-STEP_PIN_X = 11  # Pick PIN number Later
-DIR_PIN_X = 12   # Pick PIN number Later
+camera = cv2.VideoCapture(0)
 
-STEP_PIN_Y = 13  # Pick PIN number Later
-DIR_PIN_Y = 15   # Pick PIN number Later
+pygame.init()
+pygame.display.set_caption("Video Stream")
 
-# Configure GPIO pins
-GPIO.setmode(GPIO.BOARD)
-GPIO.setup(STEP_PIN_X, GPIO.OUT)
-GPIO.setup(DIR_PIN_X, GPIO.OUT)
-GPIO.setup(STEP_PIN_Y, GPIO.OUT)
-GPIO.setup(DIR_PIN_Y, GPIO.OUT)
-
-# Create an AprilTag detector
-detector = apriltag.Detector()
-
-# Define stepper motor parameters
-steps_per_revolution = 200  # Number of steps per revolution of the stepper motor
-delay = 0.01  # Delay between steps (adjust for desired speed)
-
-def move_stepper_motor(step_pin, dir_pin, steps):
-    GPIO.output(dir_pin, GPIO.HIGH if steps > 0 else GPIO.LOW)
-    steps = abs(steps)
-    for _ in range(steps):
-        GPIO.output(step_pin, GPIO.HIGH)
-        time.sleep(delay)
-        GPIO.output(step_pin, GPIO.LOW)
-        time.sleep(delay)
 
 while True:
-    # Capture frame-by-frame
-    ret, frame = cap.read()
+	ret, frame = camera.read()
+	if not ret:
+		break
+		
+	gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+	gray = cv2.GaussianBlur(gray, (21, 21), 0)
+	
+	if 'frameDelta' not in locals():
+		frameDelta = None
+		firstFrame = gray
+		
+		frameDelta = cv2.absdiff(firstFrame, gray)
+		thresh = cv2.threshold(frameDelta, 25, 255, cv2.THRESH_BINARY)[1]
+		
+		thresh = cv2.dilate(thresh, None, iterations=2)
+		contours, _ = cv2.findContours(thresh.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+		
+		for contour in contours:
+			if cv2.contourArea(contour) < 500:
+				continue
+			(x, y, w, h) = cv2.boundingRect(contour)
+			cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
+		
+		frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+		surface = pygame.surfarray.make_surface(frame_rgb)
+		screen = pygame.display.set_mode((frame.shape[1], frame.shape[0]))
+		screen.blit(surface, (0, 0))
+		pygame.display.flip()
+		
+		for event in pygame.event.get():
+			if event.type == pygame.QUIT:
+				break
 
-    # Convert frame to grayscale
-    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-
-    # Detect AprilTags in the frame
-    detections = detector.detect(gray)
-
-    # If AprilTags are detected, control the stepper motors based on their positions
-    if detections:
-        for detection in detections:
-            # Get the center of the tag
-            center_x = int(detection.center[0])
-            center_y = int(detection.center[1])
-            corner_points = detection.corners.astype(int)
-            cv2.polylines(frame, [corner_points], True, (0, 255, 0), 2)
-
-            # Calculate steps to move stepper motors
-            steps_x = center_x - 320  # Assuming the frame width is 640
-            steps_y = center_y - 240  # Assuming the frame height is 480
-
-            # Move stepper motors
-            move_stepper_motor(STEP_PIN_X, DIR_PIN_X, steps_x)
-            move_stepper_motor(STEP_PIN_Y, DIR_PIN_Y, steps_y)
-
-    # Display the frame
-     cv2.imshow('AprilTag Detection', frame)
-
-    # Break the loop when 'q' key is pressed
-    if cv2.waitKey(1) & 0xFF == ord('q'):
-        break
-
-# Release the webcam, cleanup GPIO, and close all OpenCV windows
-cap.release()
-GPIO.cleanup()
-cv2.destroyAllWindows()
+camera.release
+pygame.quit()
