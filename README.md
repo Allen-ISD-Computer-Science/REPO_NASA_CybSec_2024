@@ -26,6 +26,10 @@
 **Project Manager: Jacob Fesseha @Nigusi-Artabanus [Digital Portfolio](https://codermerlin.academy/users/jacob-fesseha/Digital%20Portfolio/index.html)**
 
 ---
+# **Link to Project Presentation**
+**[NASA CYBERSECURITY PROJECT PRESENTATION](https://docs.google.com/presentation/d/1yy5wZxm44n5CV3NfuLQcmYtim-0MNsef_eiQNs5aADA/edit?usp=sharing)**
+---
+
 # One time Pad encryption implementaion
 This is the method of reading and encrypting the text
 

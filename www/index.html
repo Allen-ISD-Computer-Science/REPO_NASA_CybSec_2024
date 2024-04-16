@@ -1,267 +1,261 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <title>NASA CyberSecurity</title>
+        <title>NASA Cybersecurity</title>
+        
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <link href="./img/ico/shieldIcon.png" rel="icon" type="image/x-icon" />
-            
-        <style>
-            body {
-                background-color: #141A22;
-            }
-
-            .content {
-                animation: fadeInAnimation ease 1.5s;
-                animation-iteration-count: 1;
-                animation-fill-mode: forwards;
-            }
-
-            .buttonTitle {
-                color: #CCCCCC;
-                background-color: #2F3D50;
-                border: none;
-                border-radius: 0;
-                animation: fadeInAnimation ease 1.5s;
-                animation-iteration-count: 1;
-                animation-fill-mode: forwards;
-            }
-
-            .buttonTitle:hover {
-                color: #CCCCCC;
-                background-color: #2F3D50;
-                border: none;
-                transition: .2s;
-            }
-
-            .collapse {
-                background-color: #3F4D60;
-            }
-
-            @keyframes fadeInAnimation {
-                0% {
-                    opacity: 0;
-                }
-                100% {
-                    opacity: 1;
-                }
-            }
-        </style>
-    </head>
-    <body>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-
-        <link rel="stylesheet" href="./css/style.css" />
-        <link href="./css/index.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         
-        <div style="background-color: #003EBD; width: 100vw; margin-bottom: 7rem;">
-            <div class="d-flex flex-row justify-content-between align-items-center" style="width: 90%; margin-left: 5%; margin-right: 5%;">
-                <nav class="navbar fixed-top" style="background-color: #003EBD; color: white;">
-                    <div class="container-fluid">
-                        <a href="./index.html">
-                            <img
-                                alt="pastedImage"
-                                src="./img/ico/CyberSec.png"
-                                style="width: 10rem;"
-                            />
-                            </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                            <img src="./img/ico/Menu.png" style="width: 3rem; border: none;">
-                        </button>
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: #141A22; color: #ffffff;">
-                            <div class="offcanvas-header">
-                                <h3 class="offcanvas-title" id="offcanvasNavbarLabel">NASA CyberSecurity</h3>
-                                <button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close">
-                                    <img src="./img/ico/Close.png" style="width: 3rem; border: none;">
-                                </button>
-                            </div>
-                            <div class="offcanvas-body" style="color: #ffffff;">
-                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#"><h5 style="color: #ffffff;">Home</h5></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="./deepdive.html"><h5 style="color: #ffffff;">Deep Dive</h5></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="./team.html"><h5 style="color: #ffffff;">Meet The Team</h5></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="./FinalUI.html"><h5 style="color: #ffffff;">Final Design</h5></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+        <link href="./img/ico/shieldIcon.png" rel="icon" type="image/x-icon">
+        <link href="./css/style.css" rel="stylesheet">
+
+        <script defer src="./js/viewOnScroll.js"></script>
+    </head>
+    <body style="width: 100vw; background-color: #141A22;">
+
+        <!-- Navbar Large -->
+        <div class="fixed-top" style="width: 100vw; background-color: #003ebd; height: 5rem;">
+            <div class="d-none d-lg-flex h-100 justify-content-between container mb-5" style="width: 90%;">
+                <div class="w-25 d-flex justify-content-center align-items-center">
+                    <img src="./img/ico/CyberSec.png" class="h-100 ms-2 me-2 mt-1 mb-1">
+                </div>
+                <nav class="nav justify-content-between align-items-center" style="width: 60%;">
+                    <a class="nav-link ms-2 me-2 active" href="./index.html" aria-current="page" style="color: #ffffff;">Home</a>
+                    <a class="nav-link ms-2 me-2" href="./team.html"  style="color: #ffffff;">Meet the Team</a>
+                    <a class="nav-link ms-2 me-2" href="./design.html"  style="color: #ffffff;">Final Design</a>
+                    <a class="nav-link ms-2 me-2" href="./dive.html"  style="color: #ffffff;">Deep Dive</a>
                 </nav>
             </div>
-            <div style="margin-top: 8rem;"></div>
         </div>
 
-        <div class="content">
-            <div class="container-fluid d-flex flex-column justify-content-center align-items-center" style="color: #ffffff; text-align: center;">
-                <div style="margin-bottom: 3rem; margin-top: 3rem;">
-                    <h1>Secure Your Files With NASA Cyber Security</h1>
-                </div>
 
-                <div style="margin-bottom: 3rem;">
-                    <p style="margin-bottom: 0;">Features</p>
-                    <hr style="border-top: 2px solid #ffffff; width: 100%; margin-top: 2px;"/>
-                    <h3>Advanced Features for NASA Hunch Security Design</h3>
-                </div>
-
-                <div class="text-start" style="width: 90%; margin-bottom: 5rem;">
-                    <div>
-                        <div class="d-flex flex-row align-items-center justify-content-start" style="background-color: #2F3D50; margin-bottom: 1rem; margin-top: 1rem; width: 100%; height: 7rem; display: inline-block;">
-                            <img src="img/ico/Features.png" height="70%" />
-                            <div class="d-flex flex-column align-items-start justify-content-center">
-                                <h5>Secure File Sharing</h5>
-                                <p>Share files securely within the NASA system.</p>
-                            </div>
-                        </div>
-                        <div class="d-flex flex-row align-items-center justify-content-start" style="background-color: #2F3D50; margin-bottom: 1rem; margin-top: 1rem; width: 100%; height: 7rem; display: inline-block;">
-                            <img src="img/ico/Features.png" height="70%" />
-                            <div class="d-flex flex-column align-items-start justify-content-center">
-                                <h5>Encrypted Data Transfer</h5>
-                                <p>Ensure the safety of data with encrypted file transfers.</p>
-                            </div>
-                        </div>
-                        <div class="d-flex flex-row align-items-center justify-content-start" style="background-color: #2F3D50; margin-bottom: 1rem; margin-top: 1rem; width: 100%; height: 7rem; display: inline-block;">
-                            <img src="img/ico/Features.png" height="70%" />
-                            <div class="d-flex flex-column align-items-start justify-content-center">
-                                <h5>Real-Time Monitoring</h5>
-                                <p>Monitor file sharing activities in real-time for enhanced security.</p>
-                            </div>
-                        </div>
-                        <div class="d-flex flex-row align-items-center justify-content-start" style="background-color: #2F3D50; margin-bottom: 1rem; margin-top: 1rem; width: 100%; height: 7rem; display: inline-block;">
-                            <img src="img/ico/Features.png" height="70%" />
-                            <div class="d-flex flex-column align-items-start justify-content-center">
-                                <h5>User Authentication</h5>
-                                <p>Verify user identity to prevent unauthorized access.</p>
-                            </div>
-                        </div>
+        <!-- Navbar Small -->
+        <nav class="d-block d-lg-none navbar navbar-light fixed-top mb-5" style="background-color: #003ebd; height: 5rem;">
+            <div class="container-fluid h-100">
+                <img src="./img/ico/CyberSec.png" class="h-100 ms-2 me-2 mt-1 mb-1">
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar"
+                >
+                    <i class="bi bi-list text-light"></i>
+                </button>
+                <div
+                    class="offcanvas offcanvas-end"
+                    data-bs-theme="dark"
+                    tabindex="-1"
+                    id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel"
+                >
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                            NASA Cyber Security
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close text-reset"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"
+                        ></button>
                     </div>
-                </div>
-
-                <div style="margin-bottom: 3rem;">
-                    <h3 style="margin-bottom: 1rem;">Share and Protect Your Files With Confidence!</h3>
-                    <a href="./deepdive.html"><button class="btn btn-primary" type="button">Learn More</button></a>
-                </div>
-            </div>
-
-            <div class="d-flex flex-column justify-content-center align-items-center" style="width: 100%; background-color: #2F3D50; color: #ffffff;">
-                <div class="container" style=" width: 80%; margin-bottom: 3rem; margin-left: 10%; margin-right: 10%;">
-                    <h1 style="margin-top: 3rem; text-align: center; margin-bottom: 1rem;">FAQ</h1>
-                </div>
-            </div>
-            
-            <div class="d-flex flex-column justify-content-center align-items-center" style="width: 100%; background-color: #2F3D50; color: #ffffff;">
-                <div class="container" style=" width: 80%; margin-bottom: 1rem; margin-left: 10%; margin-right: 10%;">
-                    <button class="btn buttonTitle d-flex flex-row justify-content-between align-items-center" style="background-color: #4F5D70; width: 100%;" onclick="changeIcon(1)" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
-                        <div style="text-align: left; width: 75%;">
-                            <h3 style="margin-top: 0.5rem;">What is the purpose of our NASA Hunch Network Security Design?</h3>
-                        </div>
-                        <img src="./img/ico/More.png" style="width: 2rem; display: block;" id="iconMore1">
-                        <img src="./img/ico/Less.png" style="width: 2rem; display: none;" id="iconLess1">
-                    </button>
-                    <div class="collapse" id="collapseExample1">
-                        <div class="card card-body d-flex flex-col justify-content-center align-items-center" style="background-color: #3F4D60; color: #ffffff;">
-                            <p style="text-indent: 1rem; margin-bottom: 0rem;">
-                                The purpose of the NASA Hunch Network Security Design is to securely share files and 
-                                data within the NASA network without data loss due to environmental factors in space.
-                            </p>
-                        </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active text-light"
+                                    aria-current="page"
+                                    href="./index.html"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="./team.html">Meet the Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="./design.html">Final Design</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="./dive.html">Deep Dive</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
+        </nav>
+        <div style="height: 7rem; width: 100vw;"></div>
 
-            <div class="d-flex flex-column justify-content-center align-items-center" style="width: 100%; background-color: #2F3D50; color: #ffffff;">
-                <div class="container" style=" width: 80%; margin-bottom: 1rem; margin-left: 10%; margin-right: 10%;">
-                    <button class="btn buttonTitle d-flex flex-row justify-content-between align-items-center" style="background-color: #4F5D70; width: 100%;" onclick="changeIcon(2)" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
-                        <div style="text-align: left; width: 75%;">
-                            <h3 style="margin-top: 0.5rem;">Why use our NASA Hunch Network Security Design?</h3>
-                        </div>
-                        <img src="./img/ico/More.png" style="width: 2rem; display: block;" id="iconMore2">
-                        <img src="./img/ico/Less.png" style="width: 2rem; display: none;" id="iconLess2">
-                    </button>
-                    <div class="collapse" id="collapseExample2">
-                        <div class="card card-body d-flex flex-col justify-content-center align-items-center" style="background-color: #3F4D60; color: #ffffff;">
-                            <p style="text-indent: 1rem; margin-bottom: 0rem;">
-                                The current issues with data corruption through cosmic/gamma rays: The first step 
-                                to data integrity is being aware of environmental issues BEFORE transferring files. 
-                                In outer space, the transfer of data can become corrupted by astronomical objects 
-                                that have a changing magnetic field, such as the planets and our Sun.
-                            </p>
-                        </div>
+        <!-- Top Heading -->
+        <div class="container d-flex flex-column align-items-center justify-content-center text-light mt-2 mb-2 FadeIn">
+            <div class="fs-1 mt-2 mb-2 text-center fw-semibold">Secure Your Files With NASA Cyber Security</div>
+            <hr class="border-top border-light border-3" style="width: 100%; height: 10px;" />
+            <div class="fs-3 mt-2 mb-2 text-center">Advanced Features for NASA Hunch Security Design</div>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="d-flex flex-column align-items-center justify-content-center">
+            <div class="row text-light w-100 d-flex flex-row align-items-center justify-content-center">
+                <div class="col-lg-5 col-11 m-2 border border-1 border-dark d-flex flex-row justify-content-evenly align-items-center FadeIn" style="background-color: #2F3D50; min-height: 10rem;">
+                    <img src="./img/ico/Features.png" style="height: 100%; width: 20%"/>
+                    <div class="d-flex flex-column align-items-center justify-content-start text-start text-light" style="width: 80%;">
+                        <div class="fs-5 mt-3 fw-semibold text-center">Secure File Sharing</div>
+                        <hr class="border-top border-light border-3" style="width: 100%; height: 2px;" />
+                        <div class="fs-6 mb-3">Share files securely within the NASA system.</div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-11 m-2 border border-1 border-dark d-flex flex-row justify-content-evenly align-items-center FadeIn" style="background-color: #2F3D50; min-height: 10rem;">
+                    <img src="./img/ico/Features.png" style="height: 100%; width: 20%"/>
+                    <div class="d-flex flex-column align-items-center justify-content-start text-start text-light" style="width: 80%;">
+                        <div class="fs-5 fw-semibold mt-3 text-center">Encrypted Data Transfer</div>
+                        <hr class="border-top border-light border-3" style="width: 100%; height: 2px;" />
+                        <div class="fs-6 mb-3">Share files securely within the NASA system.</div>
                     </div>
                 </div>
             </div>
-
-            <div class="d-flex flex-column justify-content-center align-items-center" style="width: 100%; background-color: #2F3D50; color: #ffffff;">
-                <div class="container" style=" width: 80%; margin-bottom: 1rem; margin-left: 10%; margin-right: 10%;">
-                    <button class="btn buttonTitle d-flex flex-row justify-content-between align-items-center" style="background-color: #4F5D70; width: 100%;" onclick="changeIcon(3)" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
-                        <div style="text-align: left; width: 75%;">
-                            <h3 style="margin-top: 0.5rem;">How secure is the NASA Hunch Network Security Design?</h3>
-                        </div>
-                        <img src="./img/ico/More.png" style="width: 2rem; display: block;" id="iconMore3">
-                        <img src="./img/ico/Less.png" style="width: 2rem; display: none;" id="iconLess3">
-                    </button>
-                    <div class="collapse" id="collapseExample3">
-                        <div class="card card-body d-flex flex-col justify-content-center align-items-center" style="background-color: #3F4D60; color: #ffffff;">
-                            <p style="text-indent: 1rem; margin-bottom: 0rem;">
-                                As an extra layer of security, the different devices that carry out the Network Security Design each have different levels 
-                                of clearance and permissions ranging from a Level 1-4. Thus, lower chances of a hack.
-                            </p>
-                        </div>
+            <div class="row text-light w-100 d-flex flex-row align-items-center justify-content-center">
+                <div class="col-lg-5 col-11 m-2 border border-1 border-dark d-flex flex-row justify-content-evenly align-items-center FadeIn" style="background-color: #2F3D50; min-height: 10rem;">
+                    <img src="./img/ico/Features.png" style="height: 100%; width: 20%"/>
+                    <div class="d-flex flex-column align-items-center justify-content-start text-start text-light" style="width: 80%;">
+                        <div class="fs-5 fw-semibold mt-3 text-center">Real-Time Monitoring</div>
+                        <hr class="border-top border-light border-3" style="width: 100%; height: 2px;" />
+                        <div class="fs-6 mb-3">Monitor file sharing activities in real-time for enhanced security.</div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-11 m-2 border border-1 border-dark d-flex flex-row justify-content-evenly align-items-center FadeIn" style="background-color: #2F3D50; min-height: 10rem;">
+                    <img src="./img/ico/Features.png" style="height: 100%; width: 20%"/>
+                    <div class="d-flex flex-column align-items-center justify-content-start text-start text-light" style="width: 80%;">
+                        <div class="fs-5 fw-semibold mt-3 text-center">User Authentication</div>
+                        <hr class="border-top border-light border-3" style="width: 100%; height: 2px;" />
+                        <div class="fs-6 mb-3">Verify user identity to prevent unauthorized access.</div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div style="height: 7rem; width: 100vw;"></div>
 
-            <div class="d-flex flex-column justify-content-center align-items-center" style="width: 100%; background-color: #2F3D50; color: #ffffff;">
-                <div class="container" style=" width: 80%; margin-bottom: 4rem; margin-left: 10%; margin-right: 10%;">
-                    <button class="btn buttonTitle d-flex flex-row justify-content-between align-items-center" style="background-color: #4F5D70; width: 100%;" onclick="changeIcon(4)" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
-                        <div style="text-align: left; width: 75%;">
-                            <h3 style="margin-top: 0.5rem;">How fast can the NASA Hunch Network Security Design share data?</h3>
+        <!-- Deep Dive Midsection -->
+        <div class="container text-center d-flex flex-column align-items-center justify-content-center FadeIn">
+            <div class="fs-2 fw-medium text-light mb-2">Share and Protect Your Files With Confidence!</div>
+            <a class="btn btn-primary btn-outline mt-2" href="./dive.html">Learn More!</a>
+        </div>
+        <div style="height: 5rem; width: 100vw;"></div>
+
+        <!-- FAQ -->
+        <div style="width: 100vw; background-color: #2F3D50;">
+            <div class="container d-flex flex-column align-items-center justify-content-center FadeIn">
+                <div class="fs-3 fw-semibold text-light mt-5 mb-5">FAQ</div>
+                <div class="accordion accordion-flush mb-5 w-75" id="accordionFlushExample" data-bs-theme="dark">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne"
+                                aria-expanded="true"
+                                aria-controls="flush-collapseOne"
+                            >
+                                What is the purpose of our design?
+                            </button>
+                        </h2>
+                        <div
+                            id="flush-collapseOne"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne"
+                            data-bs-parent="#accordionFlushExample"
+                        >
+                            <div class="accordion-body">
+                                The purpose of the NASA Hunch Network Security Design is to securely share files and data within the NASA network without data loss due to environmental factors in space. 
+                            </div>
                         </div>
-                        <img src="./img/ico/More.png" style="width: 2rem; display: block;" id="iconMore4">
-                        <img src="./img/ico/Less.png" style="width: 2rem; display: none;" id="iconLess4">
-                    </button>
-                    <div class="collapse" id="collapseExample4">
-                        <div class="card card-body d-flex flex-col justify-content-center align-items-center" style="background-color: #3F4D60; color: #ffffff;">
-                            <p style="text-indent: 1rem; margin-bottom: 0rem;">
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo"
+                                aria-expanded="true"
+                                aria-controls="flush-collapseTwo"
+                            >
+                                Why should you use our design?
+                            </button>
+                        </h2>
+                        <div
+                            id="flush-collapseTwo"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne"
+                            data-bs-parent="#accordionFlushExample"
+                        >
+                            <div class="accordion-body">
+                                The current issues with data corruption through cosmic/gamma rays: The first step to data integrity is being aware of environmental issues BEFORE transferring files. In outer space, the transfer of data can become corrupted by astronomical objects that have a changing magnetic field, such as the planets and our Sun.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree"
+                                aria-expanded="true"
+                                aria-controls="flush-collapseThree"
+                            >
+                                How secure is this design?
+                            </button>
+                        </h2>
+                        <div
+                            id="flush-collapseThree"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne"
+                            data-bs-parent="#accordionFlushExample"
+                        >
+                            <div class="accordion-body">
+                                As an extra layer of security, the different devices that carry out the Network Security Design each have different levels of clearance and permissions ranging from a Level 1-4. Thus, lower chances of a hack.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour"
+                                aria-expanded="true"
+                                aria-controls="flush-collapseFour"
+                            >
+                                How fast can this design share data without sacrificing security?
+                            </button>
+                        </h2>
+                        <div
+                            id="flush-collapseFour"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne"
+                            data-bs-parent="#accordionFlushExample"
+                        >
+                            <div class="accordion-body">
                                 The NASA Hunch Network Security Design prototype can currently send about 500 Megabytes per second (will be even faster).
-                            </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        
 
+        <!-- Footer -->
+        <div class="fixed-bottom bg-black text-light fs-6 text-center d-flex align-items-center justify-content-center" style="width: 100vw; height: 2rem;">
+            @ 2023-2024 NASA Hunch Cybersecurity
         </div>
 
-        <footer class="footer" style="background-color: #040A12; color: #ffffff; width: 100%; position: absolute;">
-            <div class="container d-flex flex-column justify-content-center align-items-center" style="margin-top: .5rem; margin-bottom: .5rem;">
-                <span class="footer-text">NASA Hunch Cybersecurity 2023-2024</span>
-            </div>
-        </footer>
-
-        <script>
-            function changeIcon(identify) {
-                var elementsMore = document.getElementById("iconMore" + String(identify))
-                var elementsLess = document.getElementById("iconLess" + String(identify))
-                if (elementsMore.style.display === "block") {
-                    elementsMore.style.display = "none";
-                } else {
-                    elementsMore.style.display = "block";
-                }
-                if (elementsLess.style.display === "block") {
-                    elementsLess.style.display = "none";
-                } else {
-                    elementsLess.style.display = "block";
-                }
-            };
-        </script>
-
+        <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>

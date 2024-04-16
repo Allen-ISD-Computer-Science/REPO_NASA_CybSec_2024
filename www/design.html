@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NASA Cybersecurity</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        
+        <link href="./img/ico/shieldIcon.png" rel="icon" type="image/x-icon">
+        <link href="./css/style.css" rel="stylesheet">
+
+        <script defer src="./js/viewOnScroll.js"></script>
+    </head>
+    <body style="width: 100vw; background-color: #141A22;">
+
+        <!-- Navbar Large -->
+        <div class="fixed-top" style="width: 100vw; background-color: #003ebd; height: 5rem;">
+            <div class="d-none d-lg-flex h-100 justify-content-between container mb-5" style="width: 90%;">
+                <div class="w-25 d-flex justify-content-center align-items-center">
+                    <img src="./img/ico/CyberSec.png" class="h-100 ms-2 me-2 mt-1 mb-2">
+                </div>
+                <nav class="nav justify-content-between align-items-center" style="width: 60%;">
+                    <a class="nav-link ms-2 me-2 active" href="./index.html" aria-current="page" style="color: #ffffff;">Home</a>
+                    <a class="nav-link ms-2 me-2" href="./team.html"  style="color: #ffffff;">Meet the Team</a>
+                    <a class="nav-link ms-2 me-2" href="./design.html"  style="color: #ffffff;">Final Design</a>
+                    <a class="nav-link ms-2 me-2" href="./dive.html"  style="color: #ffffff;">Deep Dive</a>
+                </nav>
+            </div>
+        </div>
+
+
+        <!-- Navbar Small -->
+        <nav class="d-block d-lg-none navbar navbar-light fixed-top mb-5" style="background-color: #003ebd; height: 5rem;">
+            <div class="container-fluid h-100">
+                <img src="./img/ico/CyberSec.png" class="h-100 ms-2 me-2 mt-1 mb-2">
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar"
+                >
+                    <i class="bi bi-list text-light"></i>
+                </button>
+                <div
+                    class="offcanvas offcanvas-end"
+                    data-bs-theme="dark"
+                    tabindex="-1"
+                    id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel"
+                >
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                            NASA Cyber Security
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close text-reset"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active text-light"
+                                    aria-current="page"
+                                    href="./index.html"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="./team.html">Meet the Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="./design.html">Final Design</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="./dive.html">Deep Dive</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div style="height: 7rem; width: 100vw;"></div>
+
+
+        <!-- Top Header -->
+        <div class="container d-flex flex-column align-items-center justify-content-center text-light mt-2 mb-2 FadeIn">
+            <div class="fs-1 mt-2 mb-2 text-center fw-semibold">Final Designs</div>
+            <hr class="border-top border-light border-3" style="width: 100%; height: 10px;" />
+        </div>
+        <div style="height: 3rem; width: 100vw;"></div>
+
+
+        <!-- Write-ups -->
+        <div id="WriteUps" class="container d-flex flex-column align-items-start justify-content-center text-light text-start">
+            <div class="fs-3 mb-5 align-self-center FadeIn">Requirements</div>
+            <div class="fs-5 lh-lg mb-2 FadeIn" style="text-indent: 1rem;">We were tasked to design a network from the ground up to protect critical infrastructure on the moon while at the sametime accounting for a reliable, redundant, and secure network to transport the data, video, telemetry, and voice from the moon's Smart Building to a Control Center(s) on Earth.</div>
+            <div class="fs-5 lh-lg mb-2 FadeIn">This includes:</div>
+            <ul class="mb-3 FadeIn">
+                <li class="fs-6 lh-lg">At least 3 Network Designs with simulation/network model that demonstrates the networks.</li>
+                <li class="fs-6 lh-lg">A recommendation on the best network design and the rationale for each component.</li>
+                <li class="fs-6 lh-lg">Give recommendations on why you chose each component.</li>
+            </ul>
+            <div class="fs-5 lh-lg mb-3 FadeIn" style="text-indent: 1rem;">When designing the network we kept 3 things in mind: security, future proofing, and redundancies. This means we try to avoid the possibility of a single point of failure, building a space network of the future, and at the same time maintaining good security practices. We put a lot of effort into researching what would be the best decision for every level of the network. On the moon we focused on how we should properly section off the network. Firstly, we modeled our network after a general industrial system. This means that we sectioned off control systems by air gapping it off from the rest of the network. We also recommend procedures that deal with control systems and find a balance between practical and necessary. Throughout cyber security history, big breaches usually occur when human operators become lazy. That's why we believe striking this balance is key to maintaining secure systems. For Moon to earth communication, we settled on the emerging optical communication system. Demonstration testing has shown this technology to be a big leap over the already existing RF system.</div>
+
+            <div class="fs-3 mb-5 mt-5 align-self-center FadeIn">Network</div>
+            <div class="fs-5 lh-lg mb-2 FadeIn row d-flex flex-row align-items-center justify-content-evenly" style="text-indent: 1rem;">
+                <div class="col-lg-6 col-11">
+                    <div class="fs-5 lh-lg mb-2 FadeIn" style="text-indent: 1rem;">We chose to section off the network to mitigate the risk of an intruder pivoting from one system to another. We based this off industrial control systems in that they are air gapped from the internet to prevent attempts of hijacks. </div>
+                    <div class="fs-5 lh-lg mb-2 FadeIn" style="text-indent: 1rem;">When it comes to users and what they are able to do, we recommend adopting a <u>principle of least privilege</u>, and if the scenario arises when the privilege of a user needs to be granted then follow preceders to grant such access. For example, the large majority of end devices such as PCs will be classified as least-privileged users, in which they have the most limited access and often the lowest level of authority.</div>
+                </div>
+                <div class="col-lg-5 col-11">
+                    <img src="./img/assets/control_center.png" class="mt-2" />
+                </div>
+            </div>
+
+            <div class="fs-3 mb-5 mt-5 align-self-center FadeIn">Optical Communication System</div>
+            <div class="fs-5 lh-lg mb-2 FadeIn row d-flex flex-row align-items-center justify-content-evenly" style="text-indent: 1rem;">
+                <div class="col-lg-6 col-11">
+                    <div class="fs-5 lh-lg mb-2 FadeIn" style="text-indent: 1rem;">We chose to use optical communication because of its improvements over RF solutions. In 2013 NASA took a huge leap forward with their LLCD. They showed that even an early optical communication system was a major improvement over the aging RF system in use.The Satellite was able to transmit 600MB/s from the moon to the earth. They were also able to send data uninterrupted for 17 hours. In 2021, they tested the revised LCRD system where the satellite would stay in Geosync orbit. In this test run they have gotten speeds up to 1.2 GB/s. The time table set for the development of the moon base, aging  RF system, and the rapid development in this technology make it the obvious choice.</div>
+                </div>
+                <div class="col-lg-5 col-11">
+                    <img src="./img/assets/optical.png" class="mt-2" />
+                </div>
+            </div>
+
+            <div class="fs-3 mb-5 mt-5 align-self-center FadeIn">Designs</div>
+
+            <img src="./img/assets/Research Base SS.png" class="w-75 mb-2 align-self-center FadeIn" />
+            <div class="fs-5 lh-lg mb-2 FadeIn" style="text-indent: 1rem;">The 1st network design is made for the moon-based research hubs. The research PCs are connected to switches and routers for quick and easy PC-to-PC communications. The control systems are air-gapped from the rest of the network to prevent any attacks from reaching them. The switches and routers act as nodes to expand on so that new PCs can be easily added. The exploration PC and the NASA communication PC are also connected to let data be easily transmitted to the research groups' PCs.</div>
+
+            <img src="./img/assets/Exploration SS.png" class="w-75 mb-2 mt-4 align-self-center FadeIn" />
+            <div class="fs-5 lh-lg mb-2 FadeIn" style="text-indent: 1rem;">The 2nd network is meant for the exploration groups on the moon. The cell tower is connected to a COS so that data can be sent and received from the PC to the radio communication devices of the explorers. They could be anything from smartphones or just walkie-talkies. The cell tower lets them communicate with each other and send any visual or audio data back to the research base. The cell tower has a max range of 4000 meters which is enough for each research base.</div>
+            
+            <img src="./img/assets/Link To Satiliete SS.png" class="w-75 mb-2 mt-4 align-self-center FadeIn" />
+            <div class="fs-5 lh-lg mb-2 FadeIn" style="text-indent: 1rem;">The 3rd design is made for connection to the satellite above the moon. The Cisco router series 2800 can be fitted with an IP VSAT satellite module to communicate with orbiting satellites. The server can be used to provide access to the internet for the base while still having a limited connection to the base.</div>
+            
+            <img src="./img/assets/Satiliete System SS.png" class="w-75 mb-2 mt-4 align-self-center FadeIn" />
+            <div class="fs-5 lh-lg mb-2 FadeIn" style="text-indent: 1rem;">Because there is no way to demonstrate satellites we used the 2811 routers to model satellites due to their satellite module. The relay system is just a simple connection between orbiting satellites and routers on the moon and Earth. Satellite nodes can be added for more security and to house lasers for optical laser communications.</div>
+
+            <div class="fs-3 mb-5 mt-5 align-self-center FadeIn">About the infrastructure</div>
+            <div class="fs-5 lh-lg mb-2 FadeIn" style="text-indent: 1rem;">NASA has been developing optical communications for both Near Earth and Deep Space applications. Our team has taken inspiration from the findings of the project, which has a few major advantages; for approximately the same mass, power, and volume, an optical communications system will provide significantly higher data rates or data volume than a comparable radio frequency system; for the same data rate (e.g. 1 Gbps of output), an optical communications system will require less mass, power, and volume than a comparable radio frequency system.</div>
+            <div class="fs-5 lh-lg mb-2 FadeIn" style="text-indent: 1rem;">The biggest threat facing integral infrastructure in space is the threat of intrusion of said infrastructure. Preventing satellite hijacking involves implementing encryption and authentication protocols to secure communication between ground stations and satellites. Access controls limit interactions with authorized personnel, while advanced monitoring systems detect unauthorized activity for swift response. Ensuring the security of software and protocols used in satellite communication is crucial to prevent the exploitation of vulnerabilities. Physical security measures, including restricted access and surveillance, help deter unauthorized physical access to critical infrastructure. Designing satellite systems with redundancy and fail-safe mechanisms allows for rapid recovery and minimizes the impact of successful hijacking attempts.</div>
+            <div class="fs-5 lh-lg mb-2 FadeIn" style="text-indent: 1rem;">One essential thing to remember is our solar system's unforgiving environment. Our sun alone interferes with our ability to communicate with our satellites effectively. This could mean life or death for astronauts who need to maintain constant contact with NASA. Optical communication overhauls this old paradigm by increasing the bandwidth and making it easier for NASA to deploy distributed ground terminals to avoid radiation, cloud coverage, and debris disturbances.</div>
+            <div class="fs-5 lh-lg mb-2 FadeIn" style="text-indent: 1rem;">Another thing to consider is the power required for an RF communication system. Therefore, we recommend an optical-based communication system with a small RF system as a fallback. The power to manage an optical ground system is notably less than that of an RF ground station. On top of this, the size of a ground station is significantly smaller and more capable than today's RF stations.</div>
+            <div class="fs-5 lh-lg mb-2 FadeIn" style="text-indent: 1rem;">The restriction that we faced during this project was power. On the moon, you are restricted in what you can take up with you. Right now, sending anything up there would cost upwards of 300k dollars per kg. To add insult to injury, a 72-cell solar panel weighs about 24 kg. So, one solar panel would cost upwards of 7.2 million dollars. A significant portion of power consumption will come from computers; therefore, we recommend a power-efficient architecture for computation on the moon. That's why we recommend arm-based computers for the moon. Its power efficiency over the x86 platform cannot be overstated; though its performance is not on par, this is not something to worry about. Apple has shown that the performance of arm-based chips is waiting to be unlocked, and in the coming years, there will be viable high-performance arm chips.</div>
+
+            <div class="fs-3 mb-5 mt-5 align-self-center FadeIn">Conclusion</div>
+            <div class="fs-5 lh-lg mb-2 FadeIn" style="text-indent: 1rem;">In conclusion, the presented network design fulfills the objective of creating a robust and secure communication infrastructure for lunar operations while ensuring reliable data transmission to Earth. By offering three distinct network designs accompanied by simulations and rationale, we have addressed the need for redundancy, security, and adaptability in the lunar network. The emphasis on security, demonstrated through air-gapped control systems and least privilege access, mitigates the risk of intrusions and ensures the integrity of critical infrastructure. Furthermore, the adoption of optical communication technology over traditional RF systems reflects a forward-looking approach, leveraging advancements in speed and reliability demonstrated by NASA's research. Overall, this comprehensive solution not only meets the immediate needs of lunar operations but also anticipates future challenges, providing a solid foundation for sustained lunar exploration and research endeavors.</div>
+        </div>
+
+        <!-- Footer -->
+        <div style="height: 3rem; width: 100vw;"></div>
+        <div class="fixed-bottom bg-black text-light fs-6 text-center d-flex align-items-center justify-content-center" style="width: 100vw; height: 2rem;">
+            @ 2023-2024 NASA Hunch Cybersecurity
+        </div>
+
+        <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
